@@ -1,0 +1,34 @@
+﻿.navbar {
+    -ms-border-radius: 0px !important;
+    border-radius: 0px !important;
+}
+
+body {
+    background-image: url(../Images/background.jpg);
+}
+
+.jumbotron {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.toys-navbar-list {
+    background-color: rgba(255, 255, 255, 0.12);
+    -ms-border-radius: 15px;
+    border-radius: 15px;
+    padding: 2px;
+}
+
+.toys-navbar-list a {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0 !important;
+}
+
+.toys-navbar-list a.selected {
+    width: 100px;
+}
