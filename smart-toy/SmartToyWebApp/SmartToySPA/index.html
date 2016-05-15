@@ -8,7 +8,7 @@
     <link type="text/css" rel="stylesheet" href="/Styles/bootstrap.min.css" />
     <link type="text/css" rel="stylesheet" href="/Styles/main.css" />
     <link type="text/css" rel="stylesheet" href="/Scripts/angular-growl.min.css" />
-
+    <link type="text/css" rel="stylesheet" href="/Styles/toggle.css" />
 
     <script type="text/javascript" src="/Scripts/angular.min.js"></script>
     <script type="text/javascript" src="/Scripts/angular-route.min.js"></script>
@@ -17,6 +17,7 @@
     <script type="text/javascript" src="/controllers.js"></script>
     <script type="text/javascript" src="/config.js"></script>
     <script type="text/javascript" src="/LS.js"></script>
+    <script type="text/javascript" src="/Scripts/toggle.js"></script>
 
     <script type="text/javascript" src="/Scripts/ui-bootstrap-tpls-1.3.2.min.js"></script>
     <script type="text/javascript" src="/Scripts/angular-growl.min.js"></script>
@@ -74,8 +75,8 @@
                             </button>
                         </li>
                         <li ng-if="isLogedIn()" class="navbar-text toys-navbar-list">
-                            <a href="/home/{{toy.Id}}" ng-repeat="toy in toys">
-                                <img src="Images/Frank.png" width="50px;" alt="{{toy.Name}}" title="{{toy.Name}}">
+                            <a ng-click="setSelectedToy(toy.Id)" href="/home/{{toy.Id}}" ng-repeat="toy in toys">
+                                <img ng-class="{true: 'selected', false: 'nonSelected'}[toy.Id==selectedToy]" src="/Images/Frank.png" width="50px;" alt="{{toy.Name}}" title="{{toy.Name}}">
                             </a>
                         </li>
                         <li><a ng-click="buttonClick()">{{buttonText()}}</a></li>

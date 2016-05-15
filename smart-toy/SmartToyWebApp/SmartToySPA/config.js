@@ -5,6 +5,10 @@
         Info: "toy/info",
         CountOfToys: "user/toys/count",
         Toys: "user/toys",
-        AddNewToy: "user/toys"
+        AddNewToy: "user/toys",
+        GetGames: "store/games",
+        DeleteToy: "toy"
     }
 };
+
+window.GlobalVars = {};

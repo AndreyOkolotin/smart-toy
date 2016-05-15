@@ -333,6 +333,13 @@ namespace SmartToyWebApp.Controllers
         [Route("Register")]
         public async Task<IHttpActionResult> Register(RegisterBindingModel model)
         {
+            //new RegisterBindingModel()
+            //{
+            //    UserName = "Admin",
+            //    Password = "123456",
+            //    ConfirmPassword = "123456"
+            //}
+
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);

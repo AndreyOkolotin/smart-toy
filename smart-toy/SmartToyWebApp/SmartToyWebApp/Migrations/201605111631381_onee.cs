@@ -3,7 +3,7 @@ namespace SmartToyWebApp.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Initial : DbMigration
+    public partial class onee : DbMigration
     {
         public override void Up()
         {
@@ -35,12 +35,17 @@ namespace SmartToyWebApp.Migrations
                 c => new
                     {
                         Id = c.Int(nullable: false, identity: true),
+                        OwnerId = c.String(maxLength: 128),
                         FriendlyName = c.String(),
-                        Owner_Id = c.String(maxLength: 128),
+                        Uid = c.Guid(nullable: false),
+                        Temperature = c.Single(nullable: false),
+                        SoftwareVersion = c.String(),
+                        Battery = c.Int(nullable: false),
+                        Type = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.AspNetUsers", t => t.Owner_Id)
-                .Index(t => t.Owner_Id);
+                .ForeignKey("dbo.AspNetUsers", t => t.OwnerId)
+                .Index(t => t.OwnerId);
             
             CreateTable(
                 "dbo.AspNetUsers",
@@ -91,7 +96,7 @@ namespace SmartToyWebApp.Migrations
         
         public override void Down()
         {
-            DropForeignKey("dbo.Toys", "Owner_Id", "dbo.AspNetUsers");
+            DropForeignKey("dbo.Toys", "OwnerId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserRoles", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserLogins", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserClaims", "UserId", "dbo.AspNetUsers");
@@ -99,7 +104,7 @@ namespace SmartToyWebApp.Migrations
             DropIndex("dbo.AspNetUserLogins", new[] { "UserId" });
             DropIndex("dbo.AspNetUserClaims", new[] { "UserId" });
             DropIndex("dbo.AspNetUsers", "UserNameIndex");
-            DropIndex("dbo.Toys", new[] { "Owner_Id" });
+            DropIndex("dbo.Toys", new[] { "OwnerId" });
             DropIndex("dbo.AspNetUserRoles", new[] { "RoleId" });
             DropIndex("dbo.AspNetUserRoles", new[] { "UserId" });
             DropIndex("dbo.AspNetRoles", "RoleNameIndex");

@@ -7,13 +7,13 @@ namespace SmartToyWebApp.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class Initial : IMigrationMetadata
+    public sealed partial class onee : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Initial));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(onee));
         
         string IMigrationMetadata.Id
         {
-            get { return "201604231412051_Initial"; }
+            get { return "201605111631381_onee"; }
         }
         
         string IMigrationMetadata.Source

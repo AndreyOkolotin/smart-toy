@@ -26,6 +26,7 @@ namespace SmartToyWebApp.Models
         }
 
         public DbSet<Toy> Toys { get; set; }
+        public DbSet<Game> Games { get; set; }
 
         public static ApplicationDbContext Create()
         {

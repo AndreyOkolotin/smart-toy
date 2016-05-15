@@ -5,10 +5,55 @@
 var smartToyControllers = angular.module('smartToyControllers', ['smartToyLocalStorage', 'angular-growl']);
 
 
-smartToyControllers.controller('HomeCtrl', function ($scope, $routeParams) {
-    $scope.ID = $routeParams.Id;
+smartToyControllers.controller('HomeCtrl', function ($scope, $routeParams, $http, growl, $rootScope, $location) {
+    $scope.deleteToy = function() {
+        $http.delete(config.WebApiEndPoint + config.Methods.DeleteToy + '/' + $routeParams.toyId).then(
+            function(res) {
+                growl.success("Removed");
+                $location.path('/main');
+                $rootScope.updateToys();
+            },
+            function(e) {
+                growl.success("Error, call system administrator");
+            });
+    }
+
+    $http.get(config.WebApiEndPoint + config.Methods.Info + '/' + $routeParams.toyId).then(
+        function(res) {
+            console.log(res);
+            $scope.Battery = res.data.Battery;
+            $scope.FriendlyName = res.data.FriendlyName;
+            $scope.Id = res.data.Id;
+            $scope.SoftwareVersion = res.data.SoftwareVersion;
+            $scope.Temperature = res.data.Temperature;
+            $scope.Type = res.data.Type;
+            $scope.Uid = res.data.Uid;
+        }, function(e) {
+            console.log("error332");
+            $scope.Battery = "";
+            $scope.FriendlyName = "";
+            $scope.Id = "";
+            $scope.SoftwareVersion = "";
+            $scope.Temperature = "";
+            $scope.Type = "";
+            $scope.Uid = "";
+        });
 });
 
+smartToyControllers.controller('SettingsCtrl', function ($scope, $routeParams) {
+    $scope.id = $routeParams.toyId;
+});
+
+
+smartToyControllers.controller('StoreGamesCtrl', function ($scope, $routeParams, $http) {
+    $http.get(config.WebApiEndPoint + config.Methods.GetGames).then(
+        function (res) {
+            console.log(res);
+            $scope.games = res.data;
+        }, function (e) {
+            console.log("error332");
+        });
+});
 
 smartToyControllers.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, $http, LS) {
     $scope.ok = function () {
@@ -36,8 +81,15 @@ smartToyControllers.controller('ModalInstanceCtrl', function ($scope, $uibModalI
 });
 
 
-smartToyControllers.controller('RightNavButtonsCtrl', ['$scope', '$location', 'LS', 'growl', '$http', '$uibModal',
-  function ($scope, $location, LS, growl, $http, $uibModal) {
+smartToyControllers.controller('RightNavButtonsCtrl', ['$scope', '$location', 'LS', 'growl', '$http', '$uibModal', '$rootScope',
+  function ($scope, $location, LS, growl, $http, $uibModal, $rootScope) {
+      
+
+      $scope.selectedToy = -1;
+
+      $scope.setSelectedToy = function (id) {
+          $scope.selectedToy = id;
+      }
 
       $http.defaults.headers.common.Authorization = "Bearer " + LS.getData();
 
@@ -50,21 +102,24 @@ smartToyControllers.controller('RightNavButtonsCtrl', ['$scope', '$location', 'L
               $scope.toysCount = "";
           });
 
-      $http.get(config.WebApiEndPoint + config.Methods.Toys).then(
-          function (res) {
-              console.log(res);
-              $scope.toys = res.data;
-          }, function (e) {
-              console.log("error332");
-              $scope.toys = [];
-          });
+      $scope.updateToys = function () {
+          $http.get(config.WebApiEndPoint + config.Methods.Toys).then(
+              function (res) {
+                  console.log(res);
+                  $scope.toys = res.data;
+              }, function (e) {
+                  console.log("error332");
+                  $scope.toys = [];
+              });
+      }
 
-      $scope.buttonText = function() {
+
+      $scope.buttonText = function () {
           var token = LS.getData();
           return token ? 'Sign Out' : 'Sign In';
       }
 
-      $scope.isLogedIn = function() {
+      $scope.isLogedIn = function () {
           var token = LS.getData();
           return !!token;
       }
@@ -92,13 +147,20 @@ smartToyControllers.controller('RightNavButtonsCtrl', ['$scope', '$location', 'L
               }
           });
 
-          modalInstance.result.then(function (selectedItem) {
-              
+          modalInstance.result.then(function () {
+              $scope.updateToys();
           }, function () {
               console.log("modal canceled");
           });
       };
 
+
+      $scope.updateToys();
+
+
+      $rootScope.updateToys = function () {
+          $scope.updateToys();
+      }
   }]);
 
 smartToyControllers.controller('InfoAboutToyCtrl', ['$scope', '$http', 'LS',
@@ -130,11 +192,11 @@ smartToyControllers.controller('InfoAboutToyCtrl', ['$scope', '$http', 'LS',
   }]);
 
 smartToyControllers.controller('SignInCtrl', ['$scope', '$http', '$location', 'LS', 'growl',
-    function($scope, $http, $location, LS, growl) {
+    function ($scope, $http, $location, LS, growl) {
         $scope.http = $http;
         $scope.password = "";
         $scope.login = "";
-        $scope.buttonClick = function() {
+        $scope.buttonClick = function () {
             $.post(
                     config.TokenEndPoint,
                     {
@@ -148,10 +210,10 @@ smartToyControllers.controller('SignInCtrl', ['$scope', '$http', '$location', 'L
                     $location.path('/home');
                     growl.success("text");
                 })
-                .fail(function() {
+                .fail(function () {
                     growl.error("error");
                 });
 
         }
     }
-  ]);
+]);

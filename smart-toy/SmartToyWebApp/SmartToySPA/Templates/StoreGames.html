@@ -1,0 +1,37 @@
+﻿<div class="col-lg-3 col-md-4 col-sm-6">
+    <h1>Store</h1>
+    <a href="#" class="btn btn-warning btn-block">Games</a>
+    <a href="#" class="btn btn-warning btn-block">Songs</a>
+    <a href="#" class="btn btn-warning btn-block">Stories</a>
+    <a href="#" class="btn btn-warning btn-block">Other</a>
+</div>
+
+<div class="col-lg-9 col-md-8 col-sm-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-1">
+                <div ng-repeat="game in games">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">{{game.Name}}</h3>
+                            <hr />
+                        </div>
+
+                        <div class="panel-body">
+                            <div>
+                                <img class="store-image" src="{{game.ImageUrl}}"/>
+                                {{game.Description}}
+                            </div>
+                            <br/>
+                            <br />
+                            <div>
+                                <h3>Cost: {{game.Cost}}</h3>
+                                <a href="#" class="btn btn-info">Buy now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

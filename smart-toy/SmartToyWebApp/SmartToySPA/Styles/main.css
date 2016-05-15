@@ -27,8 +27,16 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     padding: 0 !important;
+    display: inline !important;
 }
 
-.toys-navbar-list a.selected {
-    width: 100px;
+.toys-navbar-list a .selected {
+    background-color: springgreen;
+}
+
+.store-image {
+    max-height: 150px;
+    max-width: 150px;
+    float: left;
+    margin: 10px;
 }

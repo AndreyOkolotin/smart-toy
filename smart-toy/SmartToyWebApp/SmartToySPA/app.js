@@ -21,17 +21,21 @@
                     templateUrl: 'Templates/InfoAboutToy.html',
                     controller: 'InfoAboutToyCtrl'
                 }).
-                when('/settings', {
-                    templateUrl: 'Templates/Settings.html',
-                    controller: ''
+                when('/settings/:toyId', {
+                    templateUrl: '/Templates/Settings.html',
+                    controller: 'SettingsCtrl'
                 }).
                 when('/about', {
                     templateUrl: '/Templates/About.html',
                     controller: ''
                 }).
-                when('/home/ggg', {
+                when('/home/:toyId', {
                     templateUrl: '/Templates/Home.html',
                     controller: 'HomeCtrl'
+                }).
+                when('/store/games', {
+                    templateUrl: '/Templates/StoreGames.html',
+                    controller: 'StoreGamesCtrl'
                 }).
                 otherwise({
                     redirectTo: '/main'

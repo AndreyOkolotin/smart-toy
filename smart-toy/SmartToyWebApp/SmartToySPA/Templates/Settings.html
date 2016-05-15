@@ -1,1 +1,31 @@
-﻿
+﻿<div class="col-lg-3 col-md-4 col-sm-6">
+    <a href="#" class="btn btn-primary btn-block">My toy settings</a>
+    <a href="#" class="btn btn-primary btn-block">Actions</a>
+    <a href="#" class="btn btn-primary btn-block">Features</a>
+    <a href="#" class="btn btn-primary btn-block">Button</a>
+    <a href="/store/games" class="btn btn-warning btn-lg btn-block">Frank Store</a>
+</div>
+
+<div class="col-lg-9 col-md-8 col-sm-6">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-1">
+                <h1>Settings</h1>
+                <div>
+                    <h3>Возраст ребенка</h3>
+                    <div class="btn-group">
+                        <label class="btn btn-info" ng-model="radioModel" uib-btn-radio="'1'" uncheckable>До 6</label>
+                        <label class="btn btn-info" ng-model="radioModel" uib-btn-radio="'2'" uncheckable>6 - 9</label>
+                        <label class="btn btn-info" ng-model="radioModel" uib-btn-radio="'3'" uib-uncheckable="uncheckable">От 10</label>
+                    </div>
+
+                    <h3>Громкость</h3>
+                    <input type="text" class="slider" value="25" id="threshold" name="threshold">
+
+                    <h3>Ночной режим</h3>
+                    <input type="checkbox" checked data-toggle="toggle">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
