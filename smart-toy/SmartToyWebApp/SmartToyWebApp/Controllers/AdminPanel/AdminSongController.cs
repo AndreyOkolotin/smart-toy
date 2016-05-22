@@ -6,114 +6,113 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using SmartToyWebApp.Models.DatabaseModels;
 using SmartToyWebApp.Models;
-using Action = SmartToyWebApp.Models.DatabaseModels.Action;
+using SmartToyWebApp.Models.DatabaseModels;
 
 namespace SmartToyWebApp.Controllers
 {
-    public class AdminActionsController : Controller
+    public class AdminSongController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        // GET: /AdminActions/
+        // GET: AdminSong
         public ActionResult Index()
         {
-            return View(db.Actions.ToList());
+            return View(db.Songs.ToList());
         }
 
-        // GET: /AdminActions/Details/5
+        // GET: AdminSong/Details/5
         public ActionResult Details(Guid? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Action action = db.Actions.Find(id);
-            if (action == null)
+            Song song = db.Songs.Find(id);
+            if (song == null)
             {
                 return HttpNotFound();
             }
-            return View(action);
+            return View(song);
         }
 
-        // GET: /AdminActions/Create
+        // GET: AdminSong/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: /AdminActions/Create
+        // POST: AdminSong/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include="Id,Name,Description,ImageUrl,Commands,Cost,Type")] Action action)
+        public ActionResult Create([Bind(Include = "Id,Name,Description,ImageUrl,SongAudioFileUrl,Cost")] Song song)
         {
             if (ModelState.IsValid)
             {
-                action.Id = Guid.NewGuid();
-                db.Actions.Add(action);
+                song.Id = Guid.NewGuid();
+                db.Songs.Add(song);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(action);
+            return View(song);
         }
 
-        // GET: /AdminActions/Edit/5
+        // GET: AdminSong/Edit/5
         public ActionResult Edit(Guid? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Action action = db.Actions.Find(id);
-            if (action == null)
+            Song song = db.Songs.Find(id);
+            if (song == null)
             {
                 return HttpNotFound();
             }
-            return View(action);
+            return View(song);
         }
 
-        // POST: /AdminActions/Edit/5
+        // POST: AdminSong/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include="Id,Name,Description,ImageUrl,Commands,Cost,Type")] Action action)
+        public ActionResult Edit([Bind(Include = "Id,Name,Description,ImageUrl,SongAudioFileUrl,Cost")] Song song)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(action).State = EntityState.Modified;
+                db.Entry(song).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(action);
+            return View(song);
         }
 
-        // GET: /AdminActions/Delete/5
+        // GET: AdminSong/Delete/5
         public ActionResult Delete(Guid? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Action action = db.Actions.Find(id);
-            if (action == null)
+            Song song = db.Songs.Find(id);
+            if (song == null)
             {
                 return HttpNotFound();
             }
-            return View(action);
+            return View(song);
         }
 
-        // POST: /AdminActions/Delete/5
+        // POST: AdminSong/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(Guid id)
         {
-            Action action = db.Actions.Find(id);
-            db.Actions.Remove(action);
+            Song song = db.Songs.Find(id);
+            db.Songs.Remove(song);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
