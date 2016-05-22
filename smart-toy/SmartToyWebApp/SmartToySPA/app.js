@@ -33,6 +33,10 @@
                     templateUrl: '/Templates/StoriesAndSongs.html',
                     controller: 'StoriesAndSongsCtrl'
                 }).
+                when('/games/:toyId', {
+                    templateUrl: '/Templates/Games.html',
+                    controller: 'GamesCtrl'
+                }).
                 when('/about', {
                     templateUrl: '/Templates/About.html',
                     controller: ''

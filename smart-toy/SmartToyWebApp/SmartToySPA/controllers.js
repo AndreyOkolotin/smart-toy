@@ -104,6 +104,21 @@ smartToyControllers.controller('ActionsCtrl', function ($scope, $routeParams, gr
     
 });
 
+
+smartToyControllers.controller('GamesCtrl', function ($scope, $routeParams, growl, $http) {
+    $scope.Id = $routeParams.toyId;
+
+    $http.get(config.WebApiEndPoint + config.Methods.GetGames).then(
+    function (res) {
+        console.log(res);
+        $scope.games = res.data;
+    }, function (e) {
+        console.log("error332");
+    });
+
+
+});
+
 smartToyControllers.controller('RegistrationCtrl', function ($scope, $routeParams, $http, growl, $location) {
     $scope.buttonClick = function() {
         $http.post(config.WebApiEndPoint + config.Methods.Register,
