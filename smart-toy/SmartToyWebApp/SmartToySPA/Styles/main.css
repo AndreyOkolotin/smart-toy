@@ -40,3 +40,15 @@ body {
     float: left;
     margin: 10px;
 }
+
+img.ruble-img { height: 1.5ex; }
+span.dot { position:absolute; text-indent: -1000em; }
+
+body {
+    overflow-y: scroll;
+}
+
+.story-song-button {
+    float: left;
+    margin: 5px;
+}

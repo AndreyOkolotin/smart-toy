@@ -81,6 +81,7 @@
     <Content Include="ApiMethods.js" />
     <Content Include="Images\Frank - Copy.png" />
     <Content Include="Images\Frank 2.png" />
+    <Content Include="Images\ruble.png" />
     <Content Include="LS.js" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
@@ -118,6 +119,11 @@
     <Content Include="Scripts\angular-touch.min.js" />
     <Content Include="Scripts\angular.js" />
     <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\bootstrap-slider.js" />
+    <Content Include="Scripts\bootstrap-toggle.js" />
+    <Content Include="Scripts\bootstrap-toggle.min.js" />
+    <Content Include="Scripts\bootstrap2-toggle.js" />
+    <Content Include="Scripts\bootstrap2-toggle.min.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-dj.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-er.js" />
     <Content Include="Scripts\i18n\angular-locale_aa-et.js" />
@@ -880,6 +886,8 @@
     <Content Include="Scripts\angular.min.js.map" />
     <Content Include="Scripts\jquery-2.2.1.min.map" />
     <Content Include="Scripts\angular-local-storage.min.js.map" />
+    <Content Include="Scripts\bootstrap-toggle.min.js.map" />
+    <Content Include="Scripts\bootstrap2-toggle.min.js.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -896,15 +904,26 @@
     <Content Include="Images\Frank.png" />
     <Content Include="index.html" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Styles\bootstrap-toggle.css" />
+    <Content Include="Styles\bootstrap-toggle.min.css" />
     <Content Include="Styles\bootstrap.min.css" />
+    <Content Include="Styles\bootstrap2-toggle.css" />
+    <Content Include="Styles\bootstrap2-toggle.min.css" />
     <Content Include="Styles\main.css" />
+    <Content Include="Styles\slider.css" />
     <Content Include="Templates\About.html" />
+    <Content Include="Templates\Actions.html" />
     <Content Include="Templates\Home.html" />
     <Content Include="Templates\InfoAboutToy.html" />
     <Content Include="Templates\Main.html" />
+    <Content Include="Templates\Registration.html" />
     <Content Include="Templates\Settings.html" />
     <Content Include="Templates\SignIn.html" />
+    <Content Include="Templates\StoreActions.html" />
     <Content Include="Templates\StoreGames.html" />
+    <Content Include="Templates\StoreSongs.html" />
+    <Content Include="Templates\StoreStories.html" />
+    <Content Include="Templates\StoriesAndSongs.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

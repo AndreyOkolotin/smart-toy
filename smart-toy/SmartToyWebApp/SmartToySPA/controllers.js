@@ -41,18 +41,208 @@ smartToyControllers.controller('HomeCtrl', function ($scope, $routeParams, $http
 });
 
 smartToyControllers.controller('SettingsCtrl', function ($scope, $routeParams) {
-    $scope.id = $routeParams.toyId;
+    $scope.Id = $routeParams.toyId;
+    $scope.ageModel = '1';
+    $scope.volume = 2;
+    $scope.night = false;
+
+    $scope.save = function() {
+        
+    }
+
 });
 
 
-smartToyControllers.controller('StoreGamesCtrl', function ($scope, $routeParams, $http) {
-    $http.get(config.WebApiEndPoint + config.Methods.GetGames).then(
+smartToyControllers.controller('StoriesAndSongsCtrl', function ($scope, $routeParams, growl, $http) {
+    $scope.Id = $routeParams.toyId;
+
+    $http.get(config.WebApiEndPoint + config.Methods.GetStoriesAndSongs).then(
+    function (res) {
+        console.log(res);
+        $scope.songs = res.data;
+
+        if ($scope.songs) {
+            $scope.songs = $scope.songs.map(function(a) {
+                if (a.StoryOrSong == 0) {
+                    a.buttonClass = "info";
+                } else {
+                    a.buttonClass = "danger";
+                }
+                return a;
+            });
+        }
+    }, function (e) {
+        console.log("error332");
+    });
+
+
+});
+
+smartToyControllers.controller('ActionsCtrl', function ($scope, $routeParams, growl, $http) {
+    $scope.Id = $routeParams.toyId;
+
+    $http.get(config.WebApiEndPoint + config.Methods.GetActions).then(
+    function (res) {
+        console.log(res);
+        $scope.actions = res.data;
+
+        if ($scope.actions) {
+            $scope.actions = $scope.actions.map(function (a) {
+                a.Do = function () {
+                    growl.success("Success");
+                }
+                if (!a.Type) {
+                    a.Type = "primary";
+                }
+                return a;
+            });
+        }
+    }, function (e) {
+        console.log("error332");
+    });
+
+    
+});
+
+smartToyControllers.controller('RegistrationCtrl', function ($scope, $routeParams, $http, growl, $location) {
+    $scope.buttonClick = function() {
+        $http.post(config.WebApiEndPoint + config.Methods.Register,
+        {
+            UserName: $scope.Login,
+            Password: $scope.Password,
+            ConfirmPassword: $scope.ConfirmPassword
+        }).then(
+        function (res) {
+            growl.success("Success");
+            $location.path('/signin');s
+        }, function (e) {
+            growl.error(e.data.Message);
+        });
+    }
+});
+
+
+smartToyControllers.controller('StoreGamesCtrl', function ($scope, $routeParams, $http, growl) {
+    $scope.updateGames = function () {
+        $http.get(config.WebApiEndPoint + config.Methods.GetStoreGames).then(
+            function (res) {
+                console.log(res);
+                $scope.games = res.data;
+            }, function (e) {
+                console.log("error332");
+            });
+    }
+
+    $scope.Buy = function (actionId) {
+        $http.post(config.WebApiEndPoint + config.Methods.BuyStory + "/" + actionId).then(
         function (res) {
             console.log(res);
-            $scope.games = res.data;
+            growl.success("Success");
+            $rootScope.updateMoney();
+            $scope.updateGames();
         }, function (e) {
             console.log("error332");
+            growl.error("Error");
+            $rootScope.updateMoney();
+            $scope.updateGames();
         });
+    }
+
+    $scope.updateGames();
+});
+
+smartToyControllers.controller('StoreStoriesCtrl', function ($scope, $routeParams, $http, growl, $rootScope) {
+
+    
+    $scope.updateStories = function () {
+        $http.get(config.WebApiEndPoint + config.Methods.GetStoreStories).then(
+            function (res) {
+                console.log(res);
+                $scope.stories = res.data;
+            }, function (e) {
+                console.log("error332");
+            });
+    }
+
+    $scope.Buy = function (actionId) {
+        $http.post(config.WebApiEndPoint + config.Methods.BuyStory + "/" + actionId).then(
+        function (res) {
+            console.log(res);
+            growl.success("Success");
+            $rootScope.updateMoney();
+            $scope.updateStories();
+        }, function (e) {
+            console.log("error332");
+            growl.error("Error");
+            $rootScope.updateMoney();
+            $scope.updateStories();
+        });
+    }
+
+    $scope.updateStories();
+});
+
+
+smartToyControllers.controller('StoreSongsCtrl', function ($scope, $routeParams, $http, growl, $rootScope) {
+
+
+    $scope.updateSongs = function () {
+        $http.get(config.WebApiEndPoint + config.Methods.GetStoreSongs).then(
+            function (res) {
+                console.log(res);
+                $scope.songs = res.data;
+            }, function (e) {
+                console.log("error332");
+            });
+    }
+
+    $scope.Buy = function (actionId) {
+        $http.post(config.WebApiEndPoint + config.Methods.BuySong + "/" + actionId).then(
+        function (res) {
+            console.log(res);
+            growl.success("Success");
+            $rootScope.updateMoney();
+            $scope.updateSongs();
+        }, function (e) {
+            console.log("error332");
+            growl.error("Error");
+            $rootScope.updateMoney();
+            $scope.updateSongs();
+        });
+    }
+
+    $scope.updateSongs();
+});
+
+
+smartToyControllers.controller('StoreActionsCtrl', function ($scope, $routeParams, $http, growl, $rootScope) {
+    $scope.updateActions = function() {
+        $http.get(config.WebApiEndPoint + config.Methods.GetStoreActions).then(
+            function(res) {
+                console.log(res);
+                $scope.actions = res.data;
+            }, function(e) {
+                console.log("error332");
+            });
+    }
+
+    $scope.Buy = function(actionId)
+    {
+        $http.post(config.WebApiEndPoint + config.Methods.BuyAction + "/" + actionId).then(
+        function (res) {
+            console.log(res);
+            growl.success("Success");
+            $rootScope.updateMoney();
+            $scope.updateActions();
+        }, function (e) {
+            console.log("error332");
+            growl.error("Error");
+            $rootScope.updateMoney();
+            $scope.updateActions();
+        });
+    }
+
+    $scope.updateActions();
 });
 
 smartToyControllers.controller('ModalInstanceCtrl', function ($scope, $uibModalInstance, $http, LS) {
@@ -93,14 +283,16 @@ smartToyControllers.controller('RightNavButtonsCtrl', ['$scope', '$location', 'L
 
       $http.defaults.headers.common.Authorization = "Bearer " + LS.getData();
 
-      $http.get(config.WebApiEndPoint + config.Methods.CountOfToys).then(
-          function (res) {
-              console.log(res);
-              $scope.toysCount = "Всего у вас " + res.data + " игрушек";
-          }, function (e) {
-              console.log("error332");
-              $scope.toysCount = "";
-          });
+      $rootScope.updateMoney = function() {
+          $http.get(config.WebApiEndPoint + config.Methods.Money).then(
+              function(res) {
+                  console.log(res);
+                  $scope.money = res.data;
+              }, function(e) {
+                  console.log("error332");
+                  $scope.money = "";
+              });
+      }
 
       $scope.updateToys = function () {
           $http.get(config.WebApiEndPoint + config.Methods.Toys).then(
@@ -161,6 +353,8 @@ smartToyControllers.controller('RightNavButtonsCtrl', ['$scope', '$location', 'L
       $rootScope.updateToys = function () {
           $scope.updateToys();
       }
+
+      $rootScope.updateMoney();
   }]);
 
 smartToyControllers.controller('InfoAboutToyCtrl', ['$scope', '$http', 'LS',
@@ -191,8 +385,8 @@ smartToyControllers.controller('InfoAboutToyCtrl', ['$scope', '$http', 'LS',
       //);
   }]);
 
-smartToyControllers.controller('SignInCtrl', ['$scope', '$http', '$location', 'LS', 'growl',
-    function ($scope, $http, $location, LS, growl) {
+smartToyControllers.controller('SignInCtrl', ['$scope', '$http', '$location', 'LS', 'growl','$rootScope',
+    function ($scope, $http, $location, LS, growl, $rootScope) {
         $scope.http = $http;
         $scope.password = "";
         $scope.login = "";
@@ -209,9 +403,11 @@ smartToyControllers.controller('SignInCtrl', ['$scope', '$http', '$location', 'L
                     LS.setData(a.access_token);
                     $location.path('/home');
                     growl.success("text");
+                    $rootScope.updateToys();
                 })
-                .fail(function () {
-                    growl.error("error");
+                .fail(function (e) {
+                    console.log(e);
+                    growl.error(e.statusText);
                 });
 
         }

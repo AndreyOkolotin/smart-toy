@@ -1,37 +1,37 @@
-﻿<div class="col-lg-3 col-md-4 col-sm-6">
-    <a href="/settings/{{Id}}" class="btn btn-primary btn-block">My toy settings</a>
-    <a href="#" class="btn btn-primary btn-block">Actions</a>
-    <a href="#" class="btn btn-primary btn-block">Features</a>
-    <a href="" class="btn btn-primary btn-block">Button</a>
-    <a href="/store/games" class="btn btn-warning btn-lg btn-block">Frank Store</a>
+﻿<div class="col-lg-3 col-md-3 col-sm-3">
+    <a href="/settings/{{Id}}" class="btn btn-primary btn-block">Настройки</a>
+    <a href="/actions/{{Id}}" class="btn btn-primary btn-block">Действия</a>
+    <a href="/games/{{Id}}" class="btn btn-primary btn-block">Игры</a>
+    <a href="/storiesAndSongs/{{Id}}" class="btn btn-primary btn-block">Сказки и песни</a>
+    <a href="/store/games" class="btn btn-warning btn-lg btn-block">Frank Store (магазин)</a>
 </div>
 
-<div class="col-lg-9 col-md-8 col-sm-6">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-1">
-                <h1>{{FriendlyName}}</h1>
-                <h4>
-                    <br/>
-                    <div>
-                        Uid: {{Uid}}
-                    </div>
-                    <br/>
-                    <div>
-                        Software Version: {{SoftwareVersion}}
-                    </div>
-                    <br/>
-                    <div>
-                        Battery: {{Battery}}%
-                    </div>
-                    <br/>
-                    <div>
-                        Temperature: {{Temperature}}°C
-                    </div>
-                </h4>
+<div class="col-lg-9 col-md-9 col-sm-9">
+    <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-2">
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-8">
+            <h1>{{FriendlyName}}</h1>
+            <h4>
                 <br />
-                <a ng-click="deleteToy()" href="#" class="btn btn-primary btn-block">Delete Toy from system</a>
-            </div>
+                <div>
+                    Uid: {{Uid}}
+                </div>
+                <br />
+                <div>
+                    Software Version: {{SoftwareVersion}}
+                </div>
+                <br />
+                <div>
+                    Battery: {{Battery}}%
+                </div>
+                <br />
+                <div>
+                    Temperature: {{Temperature}}°C
+                </div>
+            </h4>
+            <br />
+            <a ng-click="deleteToy()" href="#" class="btn btn-primary btn-block">Delete Toy from system</a>
         </div>
     </div>
 </div>

@@ -18,6 +18,17 @@ namespace SmartToyWebApp.Controllers
     public class UserController : ApiController
     {
         [HttpGet]
+        [Route("money")]
+        public int GetMoney()
+        {
+            var currentUserId = this.User.Identity.GetUserId();
+            using (var context = new ApplicationDbContext())
+            {
+                return context.Users.Single(u => u.Id == currentUserId).Money;
+            }
+        }
+
+        [HttpGet]
         [Route("toys/count")]
         public int GetCountOfToys()
         {
@@ -25,6 +36,43 @@ namespace SmartToyWebApp.Controllers
             using (var context = new ApplicationDbContext())
             {
                 return context.Toys.Count(t => t.Owner.Id == currentUserId);
+            }
+        }
+
+        [HttpGet]
+        [Route("actions")]
+        public List<ActionViewModel> GetActions()
+        {
+            var currentUserId = this.User.Identity.GetUserId();
+            using (var context = new ApplicationDbContext())
+            {
+                return context.Actions.Where(a => a.Users.Any(u => u.Id == currentUserId)).ToList().ToViewModel();
+            }
+        }
+
+        [HttpGet]
+        [Route("games")]
+        public List<GameViewModel> GetGames()
+        {
+            var currentUserId = this.User.Identity.GetUserId();
+            using (var context = new ApplicationDbContext())
+            {
+                return context.Games.Where(a => a.Users.Any(u => u.Id == currentUserId)).ToList().ToViewModel();
+            }
+        }
+
+        [HttpGet]
+        [Route("storiesAndSongs")]
+        public List<StoryOrSongViewModel> GetStoriesAndSongs()
+        {
+            var currentUserId = this.User.Identity.GetUserId();
+            using (var context = new ApplicationDbContext())
+            {
+                return context.Stories.Where(a => a.Users.Any(u => u.Id == currentUserId))
+                    .ToList()
+                    .ToStoryOrSongViewModel()
+                    .Concat(
+                        context.Songs.Where(a => a.Users.Any(u => u.Id == currentUserId)).ToList().ToStoryOrSongViewModel()).OrderBy(m=>m.Name).ToList();
             }
         }
 

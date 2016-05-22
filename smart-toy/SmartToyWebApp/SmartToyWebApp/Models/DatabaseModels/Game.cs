@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace SmartToyWebApp.Models.DatabaseModels
 {
@@ -9,6 +10,7 @@ namespace SmartToyWebApp.Models.DatabaseModels
         public string Description { get; set; }
         public int Cost { get; set; }
         public string ImageUrl { get; set; }
-    
+
+        public List<ApplicationUser> Users { get; set; } 
     }
 }

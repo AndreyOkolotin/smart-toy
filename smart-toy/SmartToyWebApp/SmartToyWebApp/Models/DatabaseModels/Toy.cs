@@ -13,5 +13,9 @@ namespace SmartToyWebApp.Models.DatabaseModels
         public string SoftwareVersion { get; set; }
         public int Battery { get; set; }
         public int Type { get; set; }
+
+        public int Age { get; set; }
+        public int Volume { get; set; }
+        public bool NightMode { get; set; }
     }
 }

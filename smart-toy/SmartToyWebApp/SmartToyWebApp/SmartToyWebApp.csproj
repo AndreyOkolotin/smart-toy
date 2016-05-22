@@ -207,6 +207,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminActionsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StoreController.cs" />
     <Compile Include="Controllers\ToyController.cs" />
@@ -223,15 +224,51 @@
     <Compile Include="Migrations\201605111802444_game.Designer.cs">
       <DependentUpon>201605111802444_game.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201605211000192_actions.cs" />
+    <Compile Include="Migrations\201605211000192_actions.Designer.cs">
+      <DependentUpon>201605211000192_actions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605211012514_manyToMany.cs" />
+    <Compile Include="Migrations\201605211012514_manyToMany.Designer.cs">
+      <DependentUpon>201605211012514_manyToMany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605211015114_seedChange.cs" />
+    <Compile Include="Migrations\201605211015114_seedChange.Designer.cs">
+      <DependentUpon>201605211015114_seedChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605211114390_actions1.cs" />
+    <Compile Include="Migrations\201605211114390_actions1.Designer.cs">
+      <DependentUpon>201605211114390_actions1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605211116271_seedUpdate2.cs" />
+    <Compile Include="Migrations\201605211116271_seedUpdate2.Designer.cs">
+      <DependentUpon>201605211116271_seedUpdate2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605211440203_songs.cs" />
+    <Compile Include="Migrations\201605211440203_songs.Designer.cs">
+      <DependentUpon>201605211440203_songs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201605211544580_songsRelationshipFix.cs" />
+    <Compile Include="Migrations\201605211544580_songsRelationshipFix.Designer.cs">
+      <DependentUpon>201605211544580_songsRelationshipFix.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\DatabaseModels\Action.cs" />
     <Compile Include="Models\DatabaseModels\Game.cs" />
+    <Compile Include="Models\DatabaseModels\Song.cs" />
+    <Compile Include="Models\DatabaseModels\Story.cs" />
     <Compile Include="Models\DatabaseModels\Toy.cs" />
+    <Compile Include="Models\Extensions.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\NewToyBindingModel.cs" />
+    <Compile Include="Models\ViewModels\ActionViewModel.cs" />
     <Compile Include="Models\ViewModels\GameViewModel.cs" />
     <Compile Include="Models\ViewModels\InfoAboutToyViewModel.cs" />
+    <Compile Include="Models\ViewModels\SongViewModel.cs" />
+    <Compile Include="Models\ViewModels\StoryOrSongViewModel.cs" />
+    <Compile Include="Models\ViewModels\StoryViewModel.cs" />
     <Compile Include="Models\ViewModels\ToyViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
@@ -268,6 +305,13 @@
   <ItemGroup>
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\AdminActions\Create.cshtml" />
+    <Content Include="Views\AdminActions\Delete.cshtml" />
+    <Content Include="Views\AdminActions\Details.cshtml" />
+    <Content Include="Views\AdminActions\Edit.cshtml" />
+    <Content Include="Views\AdminActions\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201605111631381_onee.resx">
@@ -275,6 +319,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201605111802444_game.resx">
       <DependentUpon>201605111802444_game.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605211000192_actions.resx">
+      <DependentUpon>201605211000192_actions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605211012514_manyToMany.resx">
+      <DependentUpon>201605211012514_manyToMany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605211015114_seedChange.resx">
+      <DependentUpon>201605211015114_seedChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605211114390_actions1.resx">
+      <DependentUpon>201605211114390_actions1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605211116271_seedUpdate2.resx">
+      <DependentUpon>201605211116271_seedUpdate2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605211440203_songs.resx">
+      <DependentUpon>201605211440203_songs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201605211544580_songsRelationshipFix.resx">
+      <DependentUpon>201605211544580_songsRelationshipFix.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

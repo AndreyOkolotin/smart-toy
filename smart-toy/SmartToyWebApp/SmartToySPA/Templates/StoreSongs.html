@@ -1,0 +1,39 @@
+﻿<div class="col-lg-3 col-md-3 col-sm-3">
+    <h1>Магазин</h1>
+    <a href="/store/actions" class="btn btn-warning btn-block">Действия</a>
+    <a href="/store/games" class="btn btn-warning btn-block">Игры</a>
+    <a href="/store/stories" class="btn btn-warning btn-block">Сказки</a>
+    <a href="/store/songs" class="btn btn-warning btn-block">Песни</a>
+</div>
+
+<div class="col-lg-9 col-md-9 col-sm-9">
+    <div class="row">
+        <div class="col-lg-1 col-md-1 col-sm-1">
+        </div>
+        <div class="col-lg-10 col-md-10 col-sm-10">
+            <h1>Песни</h1>
+            <br />
+            <div ng-repeat="song in songs">
+                <div class="panel">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">{{song.Name}}</h3>
+                        <hr />
+                    </div>
+
+                    <div class="panel-body">
+                        <div>
+                            <img class="store-image" src="{{song.ImageUrl}}" />
+                            {{song.Description}}
+                        </div>
+                        <br />
+                        <br />
+                        <div>
+                            <h3>Cost: {{song.Cost}}</h3>
+                            <a ng-click="Buy(song.Id)" class="btn btn-info">Buy now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

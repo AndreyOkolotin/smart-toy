@@ -8,7 +8,7 @@
     <link type="text/css" rel="stylesheet" href="/Styles/bootstrap.min.css" />
     <link type="text/css" rel="stylesheet" href="/Styles/main.css" />
     <link type="text/css" rel="stylesheet" href="/Scripts/angular-growl.min.css" />
-    <link type="text/css" rel="stylesheet" href="/Styles/toggle.css" />
+    <link type="text/css" rel="stylesheet" href="/Styles/slider.css" />
 
     <script type="text/javascript" src="/Scripts/angular.min.js"></script>
     <script type="text/javascript" src="/Scripts/angular-route.min.js"></script>
@@ -17,10 +17,13 @@
     <script type="text/javascript" src="/controllers.js"></script>
     <script type="text/javascript" src="/config.js"></script>
     <script type="text/javascript" src="/LS.js"></script>
-    <script type="text/javascript" src="/Scripts/toggle.js"></script>
+    <script type="text/javascript" src="/Scripts/bootstrap-slider.js"></script>
 
     <script type="text/javascript" src="/Scripts/ui-bootstrap-tpls-1.3.2.min.js"></script>
     <script type="text/javascript" src="/Scripts/angular-growl.min.js"></script>
+
+
+
 
 </head>
 <body ng-app="smartToyApp">
@@ -34,7 +37,7 @@
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="/about">About us</a></li>
+                    <li><a href="/about">О нас</a></li>
                 </ul>
                 <div ng-controller="RightNavButtonsCtrl">
                     <script type="text/ng-template" id="myModalContent.html">
@@ -69,6 +72,10 @@
                     </script>
 
                     <ul class="nav navbar-nav navbar-right">
+
+                        <li ng-if="isLogedIn()">
+                            <a>{{money}} <img src="/Images/ruble.png" class="ruble-img" /><span class="dot">руб.</span></a>
+                        </li>
                         <li ng-if="isLogedIn()">
                             <button ng-click="openModal()" title="Добавить игрушку" type="button" class="btn btn-warning navbar-btn btn-sm">
                                 <span class="glyphicon glyphicon-plus"></span>
@@ -92,9 +99,7 @@
     <!-- Content -->
 
     <div class="container">
-        <div class="row">
-            <div ng-view>
-            </div>
+        <div class="row" ng-view>
         </div>
     </div>
 
