@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="e1d5cb15-5911-4dd3-b010-5cc4f7bc5f99"
+  name="Http"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="f7cf3397-d00c-48bd-94b1-ee350cc7dc69"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem.Web.Http"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="88b32c96-dd60-460a-9c1b-8f020fb89c1b"
+        name="IHttpActionResult"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="dd9b84b2-c54a-4c2e-bea3-7d8c610146a5"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2Fpackages%2FMicrosoft.AspNet.WebApi.Core.5.0.0%2Flib%2Fnet45%2FSystem.Web.Http.dll Namespace%3DSystem.Web.Http Type%3DIHttpActionResult"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="30c29137-279a-4cba-8608-96b5ca80cf6a"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a6d753bb-571e-483c-9e00-4183503abb6f">
+                <propertyInstance
+                  Id="2dba0267-4d01-45fa-82b2-fc11cf42a948"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="55e562d0-74fc-4d6c-ab34-337c78ff4ef0">
+                <propertyInstance
+                  Id="fcb2ef20-2095-4597-bae1-1bd0ee682b84"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f0c2340a-05ac-44cd-8cc2-038c0346ec3d">
+                <propertyInstance
+                  Id="1f35497f-ad36-4432-ab6b-edf6c1fec81e"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9b5ef25e-d240-47ad-8d3e-51457935f002">
+                <propertyInstance
+                  Id="6d90ab31-0d6e-4e5c-adc3-58c67f3fce45"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d4f2594a-b2e8-492b-af23-bd82cd12ca09"
+        name="ApiController"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="ef547309-3eb0-4e9a-86bb-1e55f12b09af"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2Fpackages%2FMicrosoft.AspNet.WebApi.Core.5.0.0%2Flib%2Fnet45%2FSystem.Web.Http.dll Namespace%3DSystem.Web.Http Type%3DApiController"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="11d815da-1b15-4451-9d9e-c7c30ab41674"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="82d0754d-3e31-43d6-89ee-f6dcb3b8bdd2">
+                <propertyInstance
+                  Id="53375d40-a4c2-4021-9894-069eccda4588"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="932a7a8f-6f85-47b4-8474-640f689a0e20">
+                <propertyInstance
+                  Id="4f254c9b-1132-45e1-9da4-2fada41a96e4"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bc1307e9-25d5-4a50-aa22-063b63f99ad1">
+                <propertyInstance
+                  Id="ca84d9f7-9e9e-4525-8b8d-394de55ad01b"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="19e26206-2a6d-4a05-b26e-24abad831ecf">
+                <propertyInstance
+                  Id="ccacd1e7-cfed-47fa-88be-e01430290b16"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fa784a31-1f60-4472-9dee-e8e5a3a3eaf7">
+                <propertyInstance
+                  Id="27a549b9-7ecc-4f85-acbc-1f2a65d25fca"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

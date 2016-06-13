@@ -1,0 +1,2239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="74bd2f9f-73ef-4dd6-aa6e-cccb042aad82"
+  name="Models"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="c558c396-fe1b-40b2-8b1e-a378ef309aa7"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSmartToyWebApp.Models"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e5532f5c-daa6-4fcb-8d1a-e06a75fe0a1f"
+        LastKnownName="DatabaseModels"
+        LastKnownLocation="Package2_2026.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="24982887-8220-41e7-9da2-a084f906a651"
+        name="ApplicationUser"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="62a74dce-1f38-4e2c-8a14-a1e3923892c1"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DApplicationUser"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="58926977-4a25-4739-81e1-2d1ba3169798"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2c19c8fe-ccbc-4454-ba44-52085aebad1e">
+                <propertyInstance
+                  Id="0234b36f-2cff-4008-a684-3a3b8002e556"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="81d63e85-a923-4ecf-b688-3234308c734e">
+                <propertyInstance
+                  Id="49e0b2b4-7a55-4df9-9e54-e1aaa6306948"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3f195222-f837-4f35-8b19-1dc2df467129">
+                <propertyInstance
+                  Id="8bf89a3f-20a2-4c1d-9325-3334400c8d25"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3c61f5bf-1b12-4981-b863-3c17a776d68f">
+                <propertyInstance
+                  Id="125678f1-0e88-4f2b-b2d8-8188fe7ed3eb"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f267ee63-b0f0-48d3-8497-9d2bec29fbed">
+                <propertyInstance
+                  Id="2a5de3e8-9599-4539-a46c-1e31c5d5e1df"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="74063afa-f3ec-47aa-a0db-7a08fca7fe01"
+            isSubstitutable="false">
+            <classMoniker
+              Id="2876ef9a-f7ee-4a7b-8521-ad6881cae221"
+              LastKnownName="IdentityUser"
+              LastKnownLocation="Package7_2029.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="a11fbc1d-5ddb-42d5-9193-d4c755464c05"
+            isDerived="false"
+            sourceEndRoleName="ApplicationUser"
+            targetEndRoleName="Actions"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="f6a5bb01-14aa-4288-a2a3-7f74031b62f8"
+              LastKnownName="List&lt;Action‎&gt;"
+              LastKnownLocation="Package5_2026.uml" />
+            <description>Property Actions references type List&lt;Action‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="59cf4623-1922-43d2-9c79-00f79a6c55ef"
+                  name="ApplicationUser"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9550b4ac-4a51-4080-8d57-8e04e981b9df"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8af4559f-fad8-452e-bcaa-0a7a994399e7"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5dfe8fd5-8b2f-4a8a-bd7c-a21de833f613"
+                  name="Actions"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="dcf074cc-c86b-46aa-afbc-8d5cc0efda4e"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a9be8743-2e2b-46f5-955a-cf7584d27858"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1744e713-cf33-463d-ab3d-e571fd3718cc"
+            isDerived="false"
+            sourceEndRoleName="ApplicationUser"
+            targetEndRoleName="Games"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="cd008284-a10a-4d3a-88fa-4acc7f6dbe2f"
+              LastKnownName="List&lt;Game‎&gt;"
+              LastKnownLocation="Package5_2026.uml" />
+            <description>Property Games references type List&lt;Game‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="93a09e52-18e9-4379-b6f2-fd8b5c38233e"
+                  name="ApplicationUser"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6ed1a1e7-812c-4d04-8ed2-4ead86734c32"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="1c05b607-e3d1-4b8b-841d-e3d2457e9acd"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e5f5f796-cc36-4749-8692-d905fb0809d8"
+                  name="Games"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="66c29713-a5f5-4965-b7cf-a9e3fb70473f"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5c836467-b91b-43c1-8aa0-3b5631874155"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="16990305-281a-4bdd-90f8-0a7bcbf375d8"
+            isDerived="false"
+            sourceEndRoleName="ApplicationUser"
+            targetEndRoleName="Stories"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5e12ab86-b118-453a-8fb4-b365d334918d"
+              LastKnownName="List&lt;Story‎&gt;"
+              LastKnownLocation="Package5_2026.uml" />
+            <description>Property Stories references type List&lt;Story‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2559b305-7d87-442e-ba5d-ae1708efe068"
+                  name="ApplicationUser"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7d748c73-3678-4454-9f7a-f92d98d71f77"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="887ca9b3-baaa-4e33-8238-6c7fc185a6a8"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f8f21f33-3e76-44a4-8558-8dd08c6863d4"
+                  name="Stories"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="149a6bbe-8366-4740-a102-b7a2d531c1b9"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="470da6d3-f12b-4df7-8cb9-5f38ca9967fc"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="69a2a591-b440-403e-a244-e78abe9d7654"
+            isDerived="false"
+            sourceEndRoleName="ApplicationUser"
+            targetEndRoleName="Songs"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="92247d3f-8e94-4390-87b5-3d78af414576"
+              LastKnownName="List&lt;Song‎&gt;"
+              LastKnownLocation="Package5_2026.uml" />
+            <description>Property Songs references type List&lt;Song‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3a7f0bca-3beb-4a56-8d89-5cd2f3b098cd"
+                  name="ApplicationUser"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a6f460f0-3dc9-4c5a-9daa-8d7c96404762"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6be1eebc-45a2-4fe6-a36c-dad2d718c347"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9236f0bb-34ed-49fc-9061-b00c874d07f5"
+                  name="Songs"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7e3753fc-5304-42cb-8f67-828863dfa180"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="490051a7-e109-419a-929b-892e2fc7579c"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="36c467cd-5162-4725-9ad2-c02f2eb3f01b"
+            isDerived="false"
+            sourceEndRoleName="ApplicationUser"
+            targetEndRoleName="Game"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="80aefa23-e6d2-4a27-a4e3-095f460b1bf4"
+              LastKnownName="Game"
+              LastKnownLocation="Package2_2026.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="18f57ed4-a96f-4531-919c-890b50ff63ce"
+                  name="ApplicationUser"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="3f42c6c0-fa6c-41e6-94ec-c6ba4a064960"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5c3a0497-cc16-466c-958b-788849f0c548"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6ccf5f25-5df6-42f1-b4e0-a5f0f2850f52"
+                  name="Game"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a0990c9d-4ffd-4d7a-801f-5fb88f1ae1f5"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="49b9d924-bf1e-4a07-9ad7-fa3e682a9c5b"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="e2b062f2-ed98-45f5-9943-3b574fcf73be"
+            isDerived="false"
+            sourceEndRoleName="ApplicationUser"
+            targetEndRoleName="Story"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="c2451165-ae9e-4dca-a12a-e2c37dd3b753"
+              LastKnownName="Story"
+              LastKnownLocation="Package2_2026.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9c2b33a0-566d-474b-92be-21e37c4c233d"
+                  name="ApplicationUser"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="aa771cb9-a527-4486-a3bf-594b588eab78"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5bef6156-0b68-4555-9412-f4b644cb8c94"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9c4fa663-157d-47b7-a49e-cf13603e7e56"
+                  name="Story"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="af58da79-8c6a-4e4e-ab7d-11eb39a68790"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="40713c7f-2766-41ec-8f0f-b8d29736dd3f"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5dd2ecdc-0bbc-4739-8cf3-fda6b4b76a43"
+            isDerived="false"
+            sourceEndRoleName="ApplicationUser"
+            targetEndRoleName="Song"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="a736e9ea-dba7-4cdc-9cb7-6aa51d11bae9"
+              LastKnownName="Song"
+              LastKnownLocation="Package2_2026.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4f9b60b9-4a70-4fd4-979c-b952ed3bc83b"
+                  name="ApplicationUser"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="85610716-7a80-48fb-877b-40dd9a8ee23c"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="0c151861-4790-47b0-9eb3-ff426ff389a7"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5fbf647c-38c3-425f-803f-2cfa11f88ed0"
+                  name="Song"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="eb3deb2b-165a-4f37-9218-7591f1bfbbb0"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="df910e69-7098-4fb9-9586-cf8e2b87032f"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b9a50457-2a6e-45d2-8a73-8af4b92c5cb8"
+            isDerived="false"
+            sourceEndRoleName="ApplicationUser"
+            targetEndRoleName="Action"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="190e48bd-5d2c-4e67-a252-27dfcb54cf95"
+              LastKnownName="Action"
+              LastKnownLocation="Package2_2026.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c2d59fad-95bf-45c0-84ca-1459ca27eac0"
+                  name="ApplicationUser"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1a6e387d-bbe2-4398-8963-a2515463c186"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="05843f59-f2f7-4450-8d3a-73c423c826a5"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d7b920a1-08a7-483b-92b2-b585c9c0aae1"
+                  name="Action"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8d508d51-f19e-4c32-b622-fd9e9ef51eb2"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e5492167-59c4-4f4f-b39a-0fa3ec3dd670"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="640e6a27-9dde-4f3b-93c1-90792c21fde4"
+            name="Actions"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="fd635ed7-223d-446d-b420-e7f4511c18c4"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DApplicationUser Member%3DActions"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="caa25fe1-8089-4ed7-bbd2-57c5555610e0"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="33428aae-dc4b-4d4c-914a-a0f66648e27c">
+                    <propertyInstance
+                      Id="8f22a85f-8c14-400f-b277-693f88d4d8ec"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="439a79b3-5946-4569-a610-13099368167c">
+                    <propertyInstance
+                      Id="b150ef6f-8245-4b20-9dca-9b8eaf3caf4c"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e7875ce3-3884-4104-9c4b-81e7046b804e">
+                    <propertyInstance
+                      Id="43b415ad-d106-40cd-b7c4-112cc20556ad"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e5578ca-fdb9-4ff7-bdca-43ab115179e9">
+                    <propertyInstance
+                      Id="a1e99099-93c4-40f5-8a8d-543a18aebd94"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dcbda3d6-dbc3-49b4-aedb-d2502d3f6ac4">
+                    <propertyInstance
+                      Id="02ac8a6b-191e-47bb-9529-a0073bec0bb8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75a55177-ced9-43a7-a044-0fee5a5ad683">
+                    <propertyInstance
+                      Id="ff2cd568-4050-404e-a829-53be849543c1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fda2ae43-6bec-4b30-ae55-a1e01b8f00d4">
+                    <propertyInstance
+                      Id="3c78bd3b-cf75-4c43-b668-6a17c5d679de"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="f6a5bb01-14aa-4288-a2a3-7f74031b62f8"
+                LastKnownName="List&lt;Action‎&gt;"
+                LastKnownLocation="Package5_2026.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="74142c57-dc07-4c3e-b2d7-7d4d4debfa05"
+            name="Games"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c499ed25-79d3-40db-8300-1b131a3eca51"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DApplicationUser Member%3DGames"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f01b1f26-57db-4303-9ad1-64664d82da83"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d5036fc-78aa-47b3-b576-d33a5855e2cb">
+                    <propertyInstance
+                      Id="7a5572c9-c1e8-4670-b422-45391ef555c5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb5b3ac2-9020-4be9-ab04-4f2bed3c673d">
+                    <propertyInstance
+                      Id="92fd1d3a-0ae1-432d-a033-2ce54b609956"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9beb632e-dccb-4a73-9b52-55d794f2726b">
+                    <propertyInstance
+                      Id="14997001-e87e-4c08-85b3-c0bc24a5edcd"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9427a0a3-0e6d-4743-9727-6b31ce9dafde">
+                    <propertyInstance
+                      Id="b693249f-9bbe-4d45-954e-90f48681e7c2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41bcd6fc-0e95-4374-8f44-4f530be47a52">
+                    <propertyInstance
+                      Id="3e0dd7f1-aef1-4d6f-8045-dc994b65f65a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ebaceec0-c832-4cce-acb6-5e9c99e2d9e1">
+                    <propertyInstance
+                      Id="1d8d85a2-5965-4082-a908-eccca08ca646"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9ff7885-69cf-4f18-ade8-c18e30e28027">
+                    <propertyInstance
+                      Id="55487fc5-b508-4803-b2c5-35935d5570a9"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="cd008284-a10a-4d3a-88fa-4acc7f6dbe2f"
+                LastKnownName="List&lt;Game‎&gt;"
+                LastKnownLocation="Package5_2026.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0c829359-aa80-4b58-8b53-7db4139a3892"
+            name="Stories"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="377524c9-c6c3-4756-8057-214b0820e1d5"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DApplicationUser Member%3DStories"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="debd3d54-5180-4218-8917-55a47f4c2f05"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab835445-d1d1-43a0-a28a-fbfd02481fb0">
+                    <propertyInstance
+                      Id="3e443851-5475-482a-9206-cd5696b3b75f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca64e9e6-631f-45f6-9bed-c4dba1a2215f">
+                    <propertyInstance
+                      Id="6b49a207-a9a7-4e07-b7f3-d2ed89f09c5e"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="721d21fd-518f-4cdd-a6ea-f94a0ad89178">
+                    <propertyInstance
+                      Id="77e32f2c-f3ef-446b-8e4f-090e0ad67f5d"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe430774-198b-466b-8640-bd94df3b576e">
+                    <propertyInstance
+                      Id="373855af-5966-4e4c-bd39-6a64349fc234"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eda6de5d-87c9-4234-ba9d-55277a64b56a">
+                    <propertyInstance
+                      Id="667e3434-31eb-4ae5-8a5b-731fe564b1c6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8aecc78c-e145-4ae2-85b9-ade3bf433e67">
+                    <propertyInstance
+                      Id="e598e03b-9ee0-4b64-b57a-40be1f9d7c96"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc68653d-e010-4702-8025-e45773acb2f9">
+                    <propertyInstance
+                      Id="55129d29-525f-4c5c-b3df-71e459e2406e"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="5e12ab86-b118-453a-8fb4-b365d334918d"
+                LastKnownName="List&lt;Story‎&gt;"
+                LastKnownLocation="Package5_2026.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="aeb7b8c8-a4a7-48d4-bed3-23d122ea714e"
+            name="Songs"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="09b6cb0a-c9e6-4b38-8abc-7fd931a21447"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DApplicationUser Member%3DSongs"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="dcd30961-38ae-41ed-8f7b-c7fd67b4a377"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fb47107d-d0c5-493a-a95f-e75710f3c611">
+                    <propertyInstance
+                      Id="21ab930e-0543-4ad1-98af-e1f1d82a4921"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b278cbcb-50c1-417a-919e-76e373538c1d">
+                    <propertyInstance
+                      Id="353a0157-d50f-4fec-989d-6128c1807cb8"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b624b7f-5e64-43a2-a3b0-185b1fc5b8d7">
+                    <propertyInstance
+                      Id="90b53e83-d1d8-4827-bb7e-cff20ad85923"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e56f35f8-d8dd-4dfa-954d-3d842357a84a">
+                    <propertyInstance
+                      Id="043eba77-2ec4-4a47-aab1-5235c7a1259f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b6b3cff-4db3-4fd4-95bc-629b1e91fa61">
+                    <propertyInstance
+                      Id="9916a1db-c10b-479c-8f8f-b98432314ae7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e4df93a0-6731-4ff1-a509-766f89ed1296">
+                    <propertyInstance
+                      Id="3cf84ac6-99a8-47c9-aa62-55d829d451bb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d9d1ca93-5b6a-41aa-9543-3e9a789d5f53">
+                    <propertyInstance
+                      Id="d262fbc8-7d17-4d52-9ef1-aa896de92404"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="92247d3f-8e94-4390-87b5-3d78af414576"
+                LastKnownName="List&lt;Song‎&gt;"
+                LastKnownLocation="Package5_2026.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="aaa09082-0a00-4cd3-b528-ad9878dd857f"
+            name="Money"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="152e83e6-e49a-4ba0-b3b4-7508d861102c"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DApplicationUser Member%3DMoney"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="dac360cf-ed5d-4f94-889d-293cf46e34c5"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35a02a5d-4fdd-4c22-8216-8c9d921d1bd7">
+                    <propertyInstance
+                      Id="08d3b4ff-a9bb-4e62-8a50-518503cd41b9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a247bb95-4576-4cab-9595-b8e6a2dc5c40">
+                    <propertyInstance
+                      Id="c37dccaf-8a6d-458f-8632-ad40864253a8"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd976599-7e76-4bf0-99ee-32d7907fb9d3">
+                    <propertyInstance
+                      Id="47fc051d-064f-42a0-a324-b47a3efef123"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d1b42a92-038c-4cbe-a4a4-cdb9edbedf75">
+                    <propertyInstance
+                      Id="3c290c3e-e31d-4d16-bac8-575c28813b5f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c47a7c44-7a10-48d6-a736-0b1c4732c1b6">
+                    <propertyInstance
+                      Id="8ee414bc-46aa-4520-9a1b-1d28213a14e6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ebd1e0f2-0e82-4b3e-9fb2-7de6f0e1f878">
+                    <propertyInstance
+                      Id="ea646a40-48e0-40ee-a8d2-e07608a4f1ba"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="768ef857-5d28-4561-9b9c-772dfbc93c0c">
+                    <propertyInstance
+                      Id="327904ef-aa93-4d49-bada-c6a19b98741c"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="36422b1a-fad5-4900-8d6a-0344a774cd54"
+            name="GenerateUserIdentityAsync"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f0f5d1a7-9c97-45df-8cae-2033bb9fec0e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DApplicationUser Member%3D(Name%3DGenerateUserIdentityAsync OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2Fpackages%2FMicrosoft.AspNet.Identity.Core.2.2.1%2Flib%2Fnet45%2FMicrosoft.AspNet.Identity.Core.dll Namespace%3DMicrosoft.AspNet.Identity Type%3D(Name%3DUserManager GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DApplicationUser)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="438e7179-85e4-4ac2-b51c-2317ea7eeeb8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0530251e-c9cd-43d6-a486-8c2342ed22be">
+                    <propertyInstance
+                      Id="f16f7d23-df47-410a-83d2-ce0375be06bb"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b3af61c-4876-4fa5-957a-352abc7a89e1">
+                    <propertyInstance
+                      Id="baa072c3-4f54-4f44-9d8e-c2afc5765760"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa056a22-1a9e-4b24-ad48-e3a54257b654">
+                    <propertyInstance
+                      Id="6eba9d07-6b31-441b-bd3a-97d2f0fa58d2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="74c82a15-e4de-4463-8406-4bc081d26a76">
+                    <propertyInstance
+                      Id="8e1bf9a5-e4db-47b2-b4e7-a74d1c9294f3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5cb30512-7501-4302-9624-e2efaf7cfdd0">
+                    <propertyInstance
+                      Id="258fd81b-b36d-4c26-affe-9b2bff22a253"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9610de51-091c-4f99-bd1d-8abf044439e5">
+                    <propertyInstance
+                      Id="fdf63457-cb42-4696-97c1-c133c11c6a43"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cf5ff467-5ecb-4287-b72f-77d892cb4f64"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="d237b062-cefa-4625-92df-7f892684c145"
+                      LastKnownName="Task&lt;ClaimsIdentity‎&gt;"
+                      LastKnownLocation="Package1_2029.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ba066605-7bc0-4c43-b4e1-96361db179ac"
+                  name="manager"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="73b59daf-3c38-4f1b-a30f-af02dda1c680"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DApplicationUser Member%3D(Name%3DGenerateUserIdentityAsync OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2Fpackages%2FMicrosoft.AspNet.Identity.Core.2.2.1%2Flib%2Fnet45%2FMicrosoft.AspNet.Identity.Core.dll Namespace%3DMicrosoft.AspNet.Identity Type%3D(Name%3DUserManager GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DApplicationUser)]))]) ParameterIdentifier%3Dmanager"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="cb2bb96a-2d75-4c92-a95b-73638d81d0a3"
+                      LastKnownName="UserManager&lt;ApplicationUser‎&gt;"
+                      LastKnownLocation="Package6_2029.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="99b477ae-901e-47e7-97e6-5e97381f5a92"
+            name="ApplicationUser"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="502a2e60-e158-46ea-b9d2-45966eb76fe2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DApplicationUser Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b004e3b4-6047-4422-b52d-f9015412fe69"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76237fc7-1557-4f63-bf11-268a7a612dbe">
+                    <propertyInstance
+                      Id="6294c109-c052-4300-9373-c6ca0df26681"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b6e6e287-a5ad-4aa8-93a9-3cbb897ed990">
+                    <propertyInstance
+                      Id="6903ac91-78df-4cfd-bde7-dd24409c2eec"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3f773b5-76f8-42ea-96eb-ca6276c224bc">
+                    <propertyInstance
+                      Id="b047d9d7-add5-4839-9c6d-5119126a23cb"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1ac374b-b559-4bde-83a4-146df6537e86">
+                    <propertyInstance
+                      Id="d8eab380-372b-462b-93fd-0fa519c962aa"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b844b633-d3cc-4e49-a8ce-59e0db9ce452">
+                    <propertyInstance
+                      Id="36587bf7-ac6a-45be-987b-a941027c3144"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2c2ae37-2c76-46f4-b840-268b0bd305bd">
+                    <propertyInstance
+                      Id="99ebd29d-39fe-479b-9a82-c4d9607afebe"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="8092e9a9-51dc-4168-bacb-ff208ab1c34d"
+        LastKnownName="ViewModels"
+        LastKnownLocation="Package_2027.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="198b2dc2-f9f2-4d89-b65c-629277738f79"
+        name="NewToyBindingModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="85909cff-bd00-45b9-a27b-a97de7591035"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DNewToyBindingModel"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="844099df-db89-48b2-a4b9-a87b95bd8de0"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e6751d73-a48a-4d77-8203-ff10f84257a2">
+                <propertyInstance
+                  Id="5e9a1dd5-b9f5-44e1-a004-0c0e4c01099e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="feb13936-ea57-4c78-b3bd-029239d3c1e8">
+                <propertyInstance
+                  Id="b02813f4-1e55-49ac-94f6-37d720efb541"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d3a245c8-76c4-4da3-a0cc-b8bc43c907f6">
+                <propertyInstance
+                  Id="7be3ec31-5157-4d2b-aec0-faad159c0548"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9faae584-9d54-49f8-bd42-317fbbd9425f">
+                <propertyInstance
+                  Id="d072eb1e-48f2-494d-8507-1ec563420105"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="129a1d2e-35c1-408f-9839-3d7801c34064">
+                <propertyInstance
+                  Id="1641d65e-6bcd-487d-86fc-31fed46bcc33"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f7a09e74-3bb4-40cd-9fb6-afae3a57262e"
+        name="ApplicationDbContext"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="937606d6-e34a-47f7-973d-a257d1568182"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DApplicationDbContext"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="5e93988e-4778-4741-ab07-a674e416b100"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="665625d3-5ff8-4ff2-83f2-6cd7aa549638">
+                <propertyInstance
+                  Id="0b0db383-9e62-45aa-8340-71c5a82d7b9c"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="379d008a-96b1-490e-9f16-00fc78030257">
+                <propertyInstance
+                  Id="09a7f71b-1639-4f2b-bfd5-1ca712e0e852"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eadc4a5d-0ede-41b2-9011-07e6879f99ae">
+                <propertyInstance
+                  Id="a8041194-ccc7-46e4-8e4e-fed6e76b7028"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d8c4b847-ca8f-4ecb-b1ce-9ca6feba8477">
+                <propertyInstance
+                  Id="090c39e1-798e-4fae-91fa-60a4c9947b96"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c354ea36-acbf-4b81-96bc-22122f0622c7">
+                <propertyInstance
+                  Id="c60d6196-8397-40c5-9657-e2f167c65998"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="67b2a7d0-7072-454a-957d-fcb3646094c0">
+            <classMoniker
+              Id="24982887-8220-41e7-9da2-a084f906a651"
+              LastKnownName="ApplicationUser"
+              LastKnownLocation="Package1_2026.uml" />
+          </dependency>
+          <dependency
+            Id="612f279c-dd89-45eb-82db-96bac906b7ee">
+            <classMoniker
+              Id="80aefa23-e6d2-4a27-a4e3-095f460b1bf4"
+              LastKnownName="Game"
+              LastKnownLocation="Package2_2026.uml" />
+          </dependency>
+          <dependency
+            Id="50442368-44d7-427a-9bc6-b015b33c9f41">
+            <classMoniker
+              Id="c2451165-ae9e-4dca-a12a-e2c37dd3b753"
+              LastKnownName="Story"
+              LastKnownLocation="Package2_2026.uml" />
+          </dependency>
+          <dependency
+            Id="e79a7d96-6e52-4790-b5e5-57bcb6aa707d">
+            <classMoniker
+              Id="a736e9ea-dba7-4cdc-9cb7-6aa51d11bae9"
+              LastKnownName="Song"
+              LastKnownLocation="Package2_2026.uml" />
+          </dependency>
+          <dependency
+            Id="f7498f3b-e8aa-4d5a-bd9c-827629be6102">
+            <classMoniker
+              Id="190e48bd-5d2c-4e67-a252-27dfcb54cf95"
+              LastKnownName="Action"
+              LastKnownLocation="Package2_2026.uml" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="14b7aff0-8d22-4337-944d-373489157ee6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="6d21de7b-9f35-4e7b-9a81-ce7f194203ba"
+              LastKnownName="IdentityDbContext&lt;ApplicationUser‎&gt;"
+              LastKnownLocation="Package7_2029.uml" />
+          </generalization>
+          <generalization
+            Id="a7a68bd0-9ec8-4f22-b81a-eb1f8de406d8"
+            isSubstitutable="false">
+            <classMoniker
+              Id="4d136838-c523-46c6-a6da-0af3e56d558e"
+              LastKnownName="IdentityDbContext"
+              LastKnownLocation="Package7_2029.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="7c822aa8-f57d-4fc5-853f-c75825d2b4e5"
+            isDerived="false"
+            sourceEndRoleName="ApplicationDbContext"
+            targetEndRoleName="Actions"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5217a8d1-2c63-4266-8b45-c1b3b799d667"
+              LastKnownName="DbSet&lt;Action‎&gt;"
+              LastKnownLocation="Package9_2029.uml" />
+            <description>Property Actions references type DbSet&lt;Action‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="06591eed-66e3-4e43-9b7a-8066ec8d0fb4"
+                  name="ApplicationDbContext"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ac3b5f2c-7bbe-449b-84b3-3c2747a953bd"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="904651df-edc7-47ed-96f0-3a6044412d37"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f81123e4-9d5f-4141-b0d4-65bdd4eecb8f"
+                  name="Actions"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7eb06bdd-ba57-4965-908d-de3a2792f497"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="387dfd50-2b4a-4522-9494-cbb77c2250a1"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="eacc9096-ca3a-4e24-a61d-d311e54eda5b"
+            isDerived="false"
+            sourceEndRoleName="ApplicationDbContext"
+            targetEndRoleName="Games"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="7970bcad-f5a5-4921-91fa-1437148ca562"
+              LastKnownName="DbSet&lt;Game‎&gt;"
+              LastKnownLocation="Package9_2029.uml" />
+            <description>Property Games references type DbSet&lt;Game‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2138ffab-0b54-4ebd-9f23-d1e7894ee2fe"
+                  name="ApplicationDbContext"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5684c780-db68-40de-b416-ade29d97c9c6"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="bc4044b2-cc8c-4042-a256-337231525e53"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8c3ecbcb-a58b-477d-8453-613fc25ba8ff"
+                  name="Games"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="da0d3360-101a-4df9-a999-dc9f9a4a6a3a"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f6dab417-5c6f-4362-be04-4200cad13d2d"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="cf5bfde5-2113-42f6-b730-0d1494a611b2"
+            isDerived="false"
+            sourceEndRoleName="ApplicationDbContext"
+            targetEndRoleName="Songs"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="5e6a91bf-2425-4a1a-a047-1da59cf5bf54"
+              LastKnownName="DbSet&lt;Song‎&gt;"
+              LastKnownLocation="Package9_2029.uml" />
+            <description>Property Songs references type DbSet&lt;Song‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3a45c80f-e721-4054-8f2d-4bd485de92a0"
+                  name="ApplicationDbContext"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="2b1e1200-4f00-4f26-9be1-36eafd502f11"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="7425de80-dc76-45f8-abe1-4b4f6442e3dd"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6f50e1fa-6868-40b0-954d-44148c641519"
+                  name="Songs"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="23376b9b-af77-459e-bafe-ddd7614d5207"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="095c766f-204e-4241-a843-f6506960a1d9"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="32222394-5741-4889-8fd6-8d7a4218c60b"
+            isDerived="false"
+            sourceEndRoleName="ApplicationDbContext"
+            targetEndRoleName="Stories"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="751d52e5-21d9-4ed3-9677-a31e3998a647"
+              LastKnownName="DbSet&lt;Story‎&gt;"
+              LastKnownLocation="Package9_2029.uml" />
+            <description>Property Stories references type DbSet&lt;Story‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="061db293-1186-4a5f-a361-e9551451ba1e"
+                  name="ApplicationDbContext"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="224337fb-df95-48cc-a2c3-e0d909dcbf08"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="66853d80-74e4-4c09-9b3e-e77728991ff3"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d187354d-9f0c-4431-8e5e-5348e6b45e10"
+                  name="Stories"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f7d6abe6-c4ca-4eed-a08b-139052839154"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6128b8a5-06f1-46c6-9099-11cadf1e55af"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="bb76ad02-f906-4e26-9e82-7afb9cc3be30"
+            isDerived="false"
+            sourceEndRoleName="ApplicationDbContext"
+            targetEndRoleName="Toys"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ea513d9c-3e4c-43c1-bb08-c15368a1a732"
+              LastKnownName="DbSet&lt;Toy‎&gt;"
+              LastKnownLocation="Package9_2029.uml" />
+            <description>Property Toys references type DbSet&lt;Toy‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="63da821a-a975-4701-9dad-9e97118bd1ee"
+                  name="ApplicationDbContext"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="88ef378f-6f9c-4e98-84b3-d9bdfe21f50d"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c7750755-c05e-4986-9bd6-745fe774fb8b"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="55334166-8d2c-47f3-b494-4728c86f75d6"
+                  name="Toys"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4370c88a-7ffc-432e-9084-ededfa73c512"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f2f2733b-2272-4031-9089-fbadfc45d8f1"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="a75d6610-bd2e-4cd5-aed7-e495994ca0d9"
+            name="Actions"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1699cb5e-c741-4319-9ce6-33ef947d3278"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DApplicationDbContext Member%3DActions"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d4d89b6f-ca44-44b6-b8e2-844aba8d539d"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e869470d-2d56-41ab-b890-4ee5d112940c">
+                    <propertyInstance
+                      Id="de7b47c3-ff72-485e-a12b-8d6385dd0a7a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9fbe550f-af0e-4e99-a5b8-57b8e2d13630">
+                    <propertyInstance
+                      Id="21a0cee7-e8b8-47e2-8352-95e8b5d2878c"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68a82e39-b44b-4790-9478-d88bd1107a12">
+                    <propertyInstance
+                      Id="a0d144f3-b649-4aac-974e-2fcd4c7948ca"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69403ba2-972a-44bb-9032-380aa15f9938">
+                    <propertyInstance
+                      Id="9516923c-eb8b-47b9-9a51-cd6f0a134644"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85ef73e3-ca80-41cd-a327-56e62a26e028">
+                    <propertyInstance
+                      Id="72439a8f-3af1-4376-9863-2aa517211d31"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c038163-e6c9-4a0e-80d1-2752e4c9ecdd">
+                    <propertyInstance
+                      Id="141530f2-8b96-4dbf-a146-4704dd32e9f1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f578ebfb-6044-4823-ba21-ffb30eafb275">
+                    <propertyInstance
+                      Id="a4c3cdfe-2a83-42ba-baba-d5aa9398a63b"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="5217a8d1-2c63-4266-8b45-c1b3b799d667"
+                LastKnownName="DbSet&lt;Action‎&gt;"
+                LastKnownLocation="Package9_2029.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0f57f177-5e88-42ae-a52f-0adc71a7a710"
+            name="Games"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="8a176f85-66e3-4786-91fd-459d8950123b"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DApplicationDbContext Member%3DGames"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="25a2cbc8-91d5-43ba-8f47-418c2999fd63"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0efd76af-e60a-4902-b455-20535731bfbd">
+                    <propertyInstance
+                      Id="30473bef-42db-41af-aa25-8af023afa09c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d1301305-f3e7-48d1-b0ac-45af003fdcf5">
+                    <propertyInstance
+                      Id="cf7478c2-b9f3-4a81-bd93-24f17f6bea3b"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a2859364-f414-4586-a328-666acbd61be5">
+                    <propertyInstance
+                      Id="daa72e10-2700-4809-a4e4-dfcbb217a07c"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1028ae87-a35f-409e-92c6-eb46aec15c33">
+                    <propertyInstance
+                      Id="4609526a-0cc3-4e29-84cd-851a5591ae64"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec701c2a-936f-4120-b3ae-5b74d9455042">
+                    <propertyInstance
+                      Id="6759489c-44d1-4f4a-ac46-a6ee4f46d77b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d537e5e8-c3fb-442b-aae1-59122411e83c">
+                    <propertyInstance
+                      Id="5642f18b-c2f9-4e45-a188-3b442c7b15cd"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cc774071-9e88-4ed3-a9da-b1b7b32f96b7">
+                    <propertyInstance
+                      Id="eca39e82-ea63-4c17-9348-caff2dfd7092"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="7970bcad-f5a5-4921-91fa-1437148ca562"
+                LastKnownName="DbSet&lt;Game‎&gt;"
+                LastKnownLocation="Package9_2029.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="21f06f52-4d25-4896-8d69-1a63eaeea75a"
+            name="Songs"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5a38de5f-37d9-4014-bf9c-7ef5684876b4"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DApplicationDbContext Member%3DSongs"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ef0f8c62-4f73-4298-be89-83689fd23782"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cbd9c1c1-080e-481c-8811-a2add8115187">
+                    <propertyInstance
+                      Id="9339308d-f396-4242-9711-bf803c66b9e2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="97652974-f68e-4afb-afc7-a978bdb3c0f9">
+                    <propertyInstance
+                      Id="f2e4b5c6-d215-43a4-8e7a-12ae2eac0c2f"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="61125422-9349-4666-a858-feece2af3221">
+                    <propertyInstance
+                      Id="fd91a003-3574-4047-a32d-efd189b4b6ca"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="041930a4-fa06-4b4c-a658-7d5fbe671474">
+                    <propertyInstance
+                      Id="8bcfd000-96a0-4a44-b224-ff4ebea2ac1b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="25863053-3dd1-4d7b-a72f-2ec34cbd1269">
+                    <propertyInstance
+                      Id="1b35f4ee-0c75-4007-acf9-4458805a97fb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fee8c41c-5bf6-49b8-aa37-1a295e913f17">
+                    <propertyInstance
+                      Id="ffd97dd6-aa45-4aff-8a46-03ee9ccb5b2d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9ef8035-74b4-4eff-a475-e9b0e78b2dfd">
+                    <propertyInstance
+                      Id="d61a717f-a806-4378-9e9c-812f84ebf456"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="5e6a91bf-2425-4a1a-a047-1da59cf5bf54"
+                LastKnownName="DbSet&lt;Song‎&gt;"
+                LastKnownLocation="Package9_2029.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d9a0f29b-f4c0-43db-b8f5-053bf81a8524"
+            name="Stories"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b2ede436-5067-4204-a2b8-b1ac1d8f1c35"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DApplicationDbContext Member%3DStories"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1d69485f-b772-4b48-b0a7-3e595885a5ec"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="720f824b-88ac-4ff9-884b-e0cd105a8b66">
+                    <propertyInstance
+                      Id="6af46d8a-6c5d-437f-801e-1cf755fa460c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a46f42f1-02c6-4810-9350-c7f9ec04eef7">
+                    <propertyInstance
+                      Id="43ff567f-6916-4b0f-9de2-540c91286c91"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c87c43ce-520e-4b7a-810e-a5dd9a7d609d">
+                    <propertyInstance
+                      Id="bfb05ad5-e7e9-42a7-a988-4041ef73e6d7"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d7fa136-1012-4bc6-9c66-06b7d46c4f08">
+                    <propertyInstance
+                      Id="18cc4add-c195-4175-9131-c4fd8b2896a7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7957549c-f1bc-4dba-a940-e1dc858ce081">
+                    <propertyInstance
+                      Id="fb7b8e14-2747-4417-8196-a2c013f95edf"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3a99ea0-35f4-4134-9b66-726d468d88b2">
+                    <propertyInstance
+                      Id="db7f4c40-7538-48fd-aa45-dab51b5b4d00"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="99f40405-b1cb-4108-9be8-289239fea3d2">
+                    <propertyInstance
+                      Id="bb94df04-7014-4236-a47d-cd9f7b06ee3b"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="751d52e5-21d9-4ed3-9677-a31e3998a647"
+                LastKnownName="DbSet&lt;Story‎&gt;"
+                LastKnownLocation="Package9_2029.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="708a388e-0d75-4602-a376-66b02bd9834d"
+            name="Toys"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="fe53ff6e-97d2-4653-843b-a387a8270d1e"
+                handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DApplicationDbContext Member%3DToys"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b6cd0efe-3f99-41b9-95d3-b5f38e30ac3d"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15ab8685-f402-4979-bdde-e244ae5f5b87">
+                    <propertyInstance
+                      Id="908ae0c6-6328-4b5a-a2a7-3a213d271bb1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23edd52e-bd9e-4245-b8ea-28388acb8e21">
+                    <propertyInstance
+                      Id="a45edf16-dbc6-4ab5-9451-1b0dd467f4bc"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6efe2b5-1e31-4f4a-9cc9-0c2d4b0127a6">
+                    <propertyInstance
+                      Id="48b539b6-6f75-4367-942a-03e5b14bf031"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0706a574-3734-4723-b702-6f8d9ff6d08d">
+                    <propertyInstance
+                      Id="67caca4f-d1de-4d2c-b300-dc9839339019"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cbb83575-278c-488c-ba74-b09bee022241">
+                    <propertyInstance
+                      Id="0aa9cec2-92b9-491d-b811-7cb27baf6941"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07ed07c5-cc57-4f4b-87eb-65cdb9a1d88b">
+                    <propertyInstance
+                      Id="32a492e5-d186-44d2-8ace-279972ff0db6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4747fa89-f5c1-4fdf-88dd-17269c95d09b">
+                    <propertyInstance
+                      Id="e5ff1f58-978c-4486-89ee-28dcef2becfe"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="ea513d9c-3e4c-43c1-bb08-c15368a1a732"
+                LastKnownName="DbSet&lt;Toy‎&gt;"
+                LastKnownLocation="Package9_2029.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="330be42d-bca9-4180-ad31-07d1b0805642"
+            name="Create"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="cef52677-86dc-431e-af5f-798c17595029"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DApplicationDbContext Member%3DCreate"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ee2bf2bc-7775-416f-a7db-33f98da22ea0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="694d32b8-5ec5-4705-ad3f-a015f79809c5">
+                    <propertyInstance
+                      Id="00ce1061-dee4-4439-a5eb-bb254da893b1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c329ddc6-f8cf-46f1-9472-80370340224c">
+                    <propertyInstance
+                      Id="067ed082-9a7a-4b52-9d1e-1955c43977dc"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a2f0db9f-2f3a-4b34-94eb-c3b3d968813e">
+                    <propertyInstance
+                      Id="d5ec011f-56bf-4e7d-9222-6bf5cea0ab33"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4476aa9-e96e-4522-aa2f-18e194c98dfd">
+                    <propertyInstance
+                      Id="72cffa12-2db1-4542-9941-d4e1ca516bd2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1a9dbc0-9681-4292-ac0a-71f3ff18c1ea">
+                    <propertyInstance
+                      Id="656aba28-0c2a-4d08-a2ec-98b683c7595c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="345b94f3-2bc1-42b5-a960-4d6f5090c037">
+                    <propertyInstance
+                      Id="36e63861-957f-420b-b656-5047ca9cbb8e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7b5e1585-7794-4278-97b5-3327d3ad5c6b"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f7a09e74-3bb4-40cd-9fb6-afae3a57262e"
+                      LastKnownName="ApplicationDbContext"
+                      LastKnownLocation="Package1_2026.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fde94a01-62a8-4131-bb11-9d6aecf1dd7a"
+            name="ApplicationDbContext"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7855db90-404a-4092-82ed-ecbbd0d22a91"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DApplicationDbContext Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f4ea39bf-0df8-4b49-a2b4-a9c8645bdb7e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cbc5b8c4-4a13-4350-8580-e84314336d99">
+                    <propertyInstance
+                      Id="34e10f7c-b8b7-4803-8ecd-fd1fc8584dd6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1329c1aa-49e5-45de-876a-686e7db3355e">
+                    <propertyInstance
+                      Id="98bc59dd-faf7-4d3c-9da4-cfd2f78273a0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="832fa2a2-2a4a-4269-ad24-2e17b519cea6">
+                    <propertyInstance
+                      Id="8dd7ade4-a6c7-4a10-b8c4-b7209c20f275"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="55656eec-831e-45e2-91ef-533bd7c8b72b">
+                    <propertyInstance
+                      Id="e314c722-c36b-454b-b166-b38e4819401a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e9d19de-6c5b-43e5-a7d5-2fccbbb76fd8">
+                    <propertyInstance
+                      Id="4f51639c-9615-494d-85b6-4a391017d8cb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84d90209-02e4-4855-b6c1-71fc619228a6">
+                    <propertyInstance
+                      Id="b1607b5d-dd80-49f4-9464-1c527d170373"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

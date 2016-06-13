@@ -358,6 +358,13 @@ namespace SmartToyWebApp.Controllers
                 return errorResult;
             }
 
+            using (var context = new ApplicationDbContext())
+            {
+                var appUser = context.Users.ToList().Single(u=>u.UserName == model.UserName);
+                appUser.Money = 250;
+                context.SaveChanges();
+            }
+
             return Ok();
         }
 

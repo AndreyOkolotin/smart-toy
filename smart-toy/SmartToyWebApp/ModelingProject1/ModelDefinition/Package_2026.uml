@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="6b696f5b-5442-404b-ab21-2c68dd2c8f91"
+  name="SmartToyWebApp"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="14d77f04-ec80-42ca-8839-12430c8eae1a"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSmartToyWebApp"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="74bd2f9f-73ef-4dd6-aa6e-cccb042aad82"
+        LastKnownName="Models"
+        LastKnownLocation="Package1_2026.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="5f87d4d0-48db-4f99-8f00-ce237e208ddb"
+        LastKnownName="Controllers"
+        LastKnownLocation="Package1_2027.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

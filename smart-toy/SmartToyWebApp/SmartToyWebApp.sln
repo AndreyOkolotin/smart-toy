@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartToyWebApp", "SmartToyWebApp\SmartToyWebApp.csproj", "{E86E02A5-975E-4F88-8028-1E036CAE97E3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmartToySPA", "SmartToySPA\SmartToySPA.csproj", "{D1BFF781-1E66-4521-99EC-62D41F59D32C}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject1", "ModelingProject1\ModelingProject1.modelproj", "{9B914E0C-F584-456E-87D2-DDB4E4D427B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{D1BFF781-1E66-4521-99EC-62D41F59D32C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1BFF781-1E66-4521-99EC-62D41F59D32C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1BFF781-1E66-4521-99EC-62D41F59D32C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B914E0C-F584-456E-87D2-DDB4E4D427B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B914E0C-F584-456E-87D2-DDB4E4D427B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B914E0C-F584-456E-87D2-DDB4E4D427B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B914E0C-F584-456E-87D2-DDB4E4D427B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

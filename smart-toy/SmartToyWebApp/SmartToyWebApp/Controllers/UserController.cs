@@ -72,7 +72,7 @@ namespace SmartToyWebApp.Controllers
                     .ToList()
                     .ToStoryOrSongViewModel()
                     .Concat(
-                        context.Songs.Where(a => a.Users.Any(u => u.Id == currentUserId)).ToList().ToStoryOrSongViewModel()).OrderBy(m=>m.Name).ToList();
+                        context.Songs.Where(a => a.Users.Any(u => u.Id == currentUserId)).ToList().ToStoryOrSongViewModel()).OrderBy(m => m.Name).ToList();
             }
         }
 
@@ -104,7 +104,10 @@ namespace SmartToyWebApp.Controllers
                 {
                     FriendlyName = newToyModel.Name,
                     Uid = uid,
-                    OwnerId = currentUserId
+                    OwnerId = currentUserId,
+                    Battery = 100,
+                    SoftwareVersion = "v1.0.0",
+                    Temperature = 18.0f,
                 };
 
                 context.Toys.Add(newToy);

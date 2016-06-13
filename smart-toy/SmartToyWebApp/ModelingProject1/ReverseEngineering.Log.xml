@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2016-05-22T20:48:55" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: '659eadd1-3a5e-4016-a018-33420176cf21' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Integer' -  (PrimitiveType)" />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SmartToyWebApp' -  (Package)" />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SmartToyWebApp::Controllers' -  (Package)" />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Medium" Text="Element reverse engineered into the UML model: 'ModelingProject1::SmartToyWebApp::Controllers::UserController' -  (Class)" />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SmartToyWebApp::Controllers::UserController::AddNewToy' -  (Operation)" />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SmartToyWebApp::Controllers::UserController::AddNewToy::newToyModel' -  (Parameter)" />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SmartToyWebApp::Controllers::UserController::GetActions' -  (Operation)" />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SmartToyWebApp::Controllers::UserController::GetCountOfToys' -  (Operation)" />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SmartToyWebApp::Controllers::UserController::GetGames' -  (Operation)" />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SmartToyWebApp::Controllers::UserController::GetMoney' -  (Operation)" />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SmartToyWebApp::Controllers::UserController::GetStoriesAndSongs' -  (Operation)" />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SmartToyWebApp::Controllers::UserController::GetToys' -  (Operation)" />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SmartToyWebApp::Controllers::UserController::UserController' -  (Operation)" />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SmartToyWebApp::Models' -  (Package)" />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SmartToyWebApp::Models::NewToyBindingModel' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SmartToyWebApp::Models::ViewModels' -  (Package)" />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SmartToyWebApp::Models::ViewModels::ActionViewModel' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SmartToyWebApp::Models::ViewModels::GameViewModel' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SmartToyWebApp::Models::ViewModels::StoryOrSongViewModel' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::SmartToyWebApp::Models::ViewModels::ToyViewModel' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System' -  (Package)" />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections' -  (Package)" />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections::Generic' -  (Package)" />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections::Generic::List' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections::Generic::List&lt;ActionViewModel‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections::Generic::List&lt;GameViewModel‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections::Generic::List&lt;StoryOrSongViewModel‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Collections::Generic::List&lt;ToyViewModel‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Web' -  (Package)" />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Web::Http' -  (Package)" />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Web::Http::ApiController' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'ModelingProject1::System::Web::Http::IHttpActionResult' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::SmartToyWebApp::Controllers::UserController to ModelingProject1::System::Web::Http::ApiController (Generalization)" />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::SmartToyWebApp::Controllers::StoreController to ModelingProject1::System::Web::Http::ApiController (Generalization)" />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: ModelingProject1::SmartToyWebApp::Controllers::ToyController to ModelingProject1::System::Web::Http::ApiController (Generalization)" />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="High" Text="(1) type(s) fully reverse engineered." />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="High" Text="(12) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2016-05-22T20:48:58" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>

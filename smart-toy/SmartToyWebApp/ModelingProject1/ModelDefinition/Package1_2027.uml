@@ -1,0 +1,2045 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="5f87d4d0-48db-4f99-8f00-ce237e208ddb"
+  name="Controllers"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="2412d672-a499-4ab1-849a-7f808384f4bd"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSmartToyWebApp.Controllers"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="a1d3c070-11d6-4b28-82b6-289c259c4085"
+        name="UserController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="c0fc7a19-f136-4c84-89a2-158c11e6a673"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DUserController"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e26340e1-bc3e-46ec-9de9-5fe278dca0d8"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ea697d30-1f9f-4038-8ef5-96dd46497758">
+                <propertyInstance
+                  Id="dc12a1a9-c9c7-498b-9fa8-906bdc33c97d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="06507a23-3bf9-438b-ae4b-552ccf6aaf52">
+                <propertyInstance
+                  Id="06b135d0-e06f-433f-9e7d-5f237c21343e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="07422453-8c71-4c61-95a1-9a3915c87f28">
+                <propertyInstance
+                  Id="6db40b98-d9e6-4d23-b2f1-375fe0440979"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5dff5fc9-eef8-4764-b646-b5bf953e09d7">
+                <propertyInstance
+                  Id="b4f068cf-d002-485c-8c70-9fd8cc4373b0"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="725dcfcc-50ba-47fb-a8b4-a9baf779f45e">
+                <propertyInstance
+                  Id="289598f5-642f-4b82-9440-316c21ddd75f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="ca31f0ed-3257-4c18-bf86-db50b27511ce">
+            <classMoniker
+              Id="f7a09e74-3bb4-40cd-9fb6-afae3a57262e"
+              LastKnownName="ApplicationDbContext"
+              LastKnownLocation="Package1_2026.uml" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="f2f73a24-3bcf-4f51-aac5-760d4f995343"
+            isSubstitutable="false">
+            <classMoniker
+              Id="d4f2594a-b2e8-492b-af23-bd82cd12ca09"
+              LastKnownName="ApiController"
+              LastKnownLocation="Package3_2027.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e41a7915-9aca-46fa-be2a-2791d200385a"
+            name="AddNewToy"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f17c1791-f1f8-470a-aef8-32d72b10fbb7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DUserController Member%3D(Name%3DAddNewToy OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DNewToyBindingModel)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9d195cb4-e236-45eb-8982-2da24637fc9c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4549322f-1182-4335-bbfb-25d80f325d53">
+                    <propertyInstance
+                      Id="05ab9a6c-f20b-4f2a-85a0-c252105f5bb4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="945ed045-25ca-4e7a-87fa-06bbb128e3e6">
+                    <propertyInstance
+                      Id="e7eaaae8-5296-45be-9a2b-2df46ed002d9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0fc87dcd-1697-43fa-badb-785b93f9376d">
+                    <propertyInstance
+                      Id="d5150a07-305c-499c-bd10-5b5a7576a45f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5660b8c7-99f7-4227-a88d-29c6df92b1ae">
+                    <propertyInstance
+                      Id="9cbf238e-60a5-4b4c-bfb4-1b68f4061c70"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4ea009b4-9ec1-432c-a558-f703f9aca568">
+                    <propertyInstance
+                      Id="afdcffca-8ebd-4c66-ac12-ced17fca06a9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7495bffd-14f7-4bf8-a799-ec4684b3c2f2">
+                    <propertyInstance
+                      Id="ebdf8f2a-ba87-4be0-8cf4-98b34025ee9b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="63ae7742-3b9f-4d9d-8fd9-cbd424eca774"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="88b32c96-dd60-460a-9c1b-8f020fb89c1b"
+                      LastKnownName="IHttpActionResult"
+                      LastKnownLocation="Package3_2027.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="02b38c98-e845-4c3c-b50f-2ef0933fd426"
+                  name="newToyModel"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="773da477-0ad7-4c19-976d-d10b7eba341b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DUserController Member%3D(Name%3DAddNewToy OverloadingParameters%3D[(Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DNewToyBindingModel)]) ParameterIdentifier%3DnewToyModel"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="198b2dc2-f9f2-4d89-b65c-629277738f79"
+                      LastKnownName="NewToyBindingModel"
+                      LastKnownLocation="Package1_2026.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e039cb4b-9cdd-417d-916c-08dafb1479ea"
+            name="GetActions"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2eec3294-1a2d-4610-b2c7-a251a03e2d4e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DUserController Member%3DGetActions"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e2fbed1f-5433-44bc-b9cf-6211c1e163d1"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96c9d90c-439e-4da7-a6ac-bbe7f1ec23ff">
+                    <propertyInstance
+                      Id="171c2f25-9a74-4dc6-b2fd-44c933b15d06"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc11f81a-2788-499b-8392-23dd143bcfd9">
+                    <propertyInstance
+                      Id="140c3e70-8fe6-46e6-93e2-ad8deba6c6b5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dde297a7-72bd-4f6c-a284-eab22b1326bd">
+                    <propertyInstance
+                      Id="fc978e62-5797-45ac-85f9-eae56ca5c2c2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7361696a-f9db-419e-86bf-13be75eab3f6">
+                    <propertyInstance
+                      Id="7bbc260e-dc5f-45e1-8c6a-921b260d3523"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="20beb657-dd57-4b55-bac7-ba11f99b3e13">
+                    <propertyInstance
+                      Id="766c6789-7a7f-445a-b2af-b627cb86c640"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7b6ddcb-a06a-47c5-b76b-c5ea3ca7b8cf">
+                    <propertyInstance
+                      Id="6fd1dce6-f3dd-4f5e-8e21-eb72175514ee"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e3ad2420-0ec6-48c6-92c3-b6a9cccb2329"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ffa1af44-5db6-4be0-8abc-feefa13cc7db"
+                      LastKnownName="List&lt;ActionViewModel‎&gt;"
+                      LastKnownLocation="Package5_2026.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a0d4efd9-dcfb-4dad-8e68-5aa5c47095ad"
+            name="GetCountOfToys"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3e69dddc-b612-4d4c-aca5-46e9bfdfd3dd"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DUserController Member%3DGetCountOfToys"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c7f65b68-78cb-498d-a427-b1f638938f5c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="355b177e-0289-4504-ad56-6595259a3f98">
+                    <propertyInstance
+                      Id="e527b2aa-5897-4180-a43f-6c974be93b0f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ab2d9bf-6428-449a-ba7a-eb19383b79c3">
+                    <propertyInstance
+                      Id="7eb5711c-a014-47d3-8805-d5d4c0512477"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60fbad7c-8080-455b-aa12-2e1216eee18f">
+                    <propertyInstance
+                      Id="ba42710f-1241-43ab-85ed-536839f77c9d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="53835552-6825-44fc-95f2-5b426d140e6a">
+                    <propertyInstance
+                      Id="dee419dd-9b44-4d0f-91c0-b6c1cc67c23f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="50b1b59d-7cf4-4a1d-a1ab-e5e933b9a031">
+                    <propertyInstance
+                      Id="f60fbc42-1c30-46f1-a691-1116035f157f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ab2e31d-1b0e-4db2-be0b-53eb9d091276">
+                    <propertyInstance
+                      Id="eea4f110-f20a-4dac-a381-c267212085c7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6de129c2-a69b-4bee-ad6e-b8d461dc0fcf"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9224df2a-a6fb-40c1-9c5f-a095a770a337"
+            name="GetGames"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="58e536b5-174c-492a-9850-570f10896f52"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DUserController Member%3DGetGames"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2a4c56b6-eef0-445e-995b-f30d420a0fc1"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49ef6b41-59fc-45be-9a80-f36ef8811303">
+                    <propertyInstance
+                      Id="192cd996-4420-4e01-89d9-cb1bed707104"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3908113e-7ecd-402b-9e31-7743040772e4">
+                    <propertyInstance
+                      Id="74c08406-d9b2-4e91-b11a-42de6efc3815"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="64d0ba56-da2e-4d8e-8a0e-c26da1945cad">
+                    <propertyInstance
+                      Id="ef212d3c-373e-4933-9314-b7485a2f1c4c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ef0fdb3-d9f1-4a12-9ea6-a49eea5cb9bf">
+                    <propertyInstance
+                      Id="3f7a2f22-d6c7-4acc-88fe-32280285af6d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b6581d8a-3a4d-4ab6-be98-f927e90121cc">
+                    <propertyInstance
+                      Id="c391be91-d49b-485c-8ee1-6e6caa59780d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf8cd104-58a2-46f3-b94e-eff5d1e416af">
+                    <propertyInstance
+                      Id="db7b361c-d3b1-475a-b846-26fef51ba1bf"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2a15f3d8-4c0d-4042-8640-19d0d3ba9d78"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="36325c91-3aea-48c0-9002-fab8ad06596d"
+                      LastKnownName="List&lt;GameViewModel‎&gt;"
+                      LastKnownLocation="Package5_2026.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d4852b24-0d15-431d-822a-03e2b076ebd2"
+            name="GetMoney"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b85ab567-ffc4-4b73-aca8-2f50d0cc90ec"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DUserController Member%3DGetMoney"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="377c05cb-1f9f-436f-8f4e-5a5f0d56f0a9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="614a73eb-f03e-45c4-bd6e-64d88564b6bd">
+                    <propertyInstance
+                      Id="dc26b8ff-96e5-4ed9-ac72-ca3e322b2038"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="98d9cb59-e42b-4ef3-9807-a955018c99e0">
+                    <propertyInstance
+                      Id="d7a4e219-7a81-4f48-812c-24c1eb168828"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3d338d0-6ecb-49ec-8a82-94b4e3c07c03">
+                    <propertyInstance
+                      Id="2d2a6741-6b2a-4f3e-83c0-197bde3f617c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4836fb8d-e46b-458b-b57e-45c062246400">
+                    <propertyInstance
+                      Id="eddf2c4d-4346-4e2b-acbb-265812e96332"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="841849e3-ede6-4c37-b5ed-b513e768f503">
+                    <propertyInstance
+                      Id="c0abdd77-acf6-4496-bad7-41e3bf0e4de1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="813a8184-ff5f-4356-bdd6-5ffbc385e0fa">
+                    <propertyInstance
+                      Id="b7d0c9b1-beda-4b9f-ac69-64e36e713c81"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="588f8ad9-8ab2-4f28-94f1-7b7d94adc9ad"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="dd469e42-688b-449e-8db4-a33737064c69"
+            name="GetStoriesAndSongs"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="bcffa097-fd7f-414d-9be1-1b2e5f6bd4fb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DUserController Member%3DGetStoriesAndSongs"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="48a7671b-1a5e-4ac5-a6c3-228debfa39c9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce7c8173-aa62-4419-96b0-19dc011987aa">
+                    <propertyInstance
+                      Id="0b6734ed-44c5-4579-8030-a9accda4dbc2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="19a9d047-291d-47bd-b3c3-185af365bd34">
+                    <propertyInstance
+                      Id="85aea4f9-df16-4c99-9f6b-cd7de0c2862e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d6ef51fa-2f9a-4d00-b1d6-9ff0dab2b5de">
+                    <propertyInstance
+                      Id="7c5ae821-0e44-435d-bdc9-76b0404b879e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0a619f5b-306d-411d-be2f-f5a159573c1f">
+                    <propertyInstance
+                      Id="d4e0a923-180a-4d8f-ab77-adb90e271f47"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce1984e2-0648-45e7-b127-06c4dada6f7c">
+                    <propertyInstance
+                      Id="f3cd888c-a703-4998-af04-ae05d73957ff"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff7074e2-8e31-4bba-9549-b29013973e13">
+                    <propertyInstance
+                      Id="6601a86b-75f5-4c1a-b2c4-dcede4a94c12"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7fd5f233-d3f0-43bf-b036-e66e5dce2b23"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="c4f9b960-35d1-4999-bdf4-cfc683872f2a"
+                      LastKnownName="List&lt;StoryOrSongViewModel‎&gt;"
+                      LastKnownLocation="Package5_2026.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="869a59d3-0180-4952-bab2-7f0d8ec8dc3f"
+            name="GetToys"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1cd229fe-9869-409f-b4f6-839d5a3c719f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DUserController Member%3DGetToys"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8786dd3f-af44-4eef-9a61-d561827ee42a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a63205e6-3fa8-4952-8953-147995a682a7">
+                    <propertyInstance
+                      Id="11b79a62-8196-479b-9a46-f7a80f1f10e8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d62ae73b-0364-456b-9546-6de77b9fbfd6">
+                    <propertyInstance
+                      Id="1b2115b9-00b4-4bf1-90ea-b3937c67e3c3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0711f7a2-85b9-44f9-bd86-6da1f591ab10">
+                    <propertyInstance
+                      Id="31acfc9f-3a7f-40bf-8095-bf7518fc3e61"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="867e1d86-8c0d-48d5-8058-6517eb27f815">
+                    <propertyInstance
+                      Id="c601c0aa-5385-4111-aa5c-1bf932a2fcaa"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7dab753d-0ce8-4772-93b5-8168d8453812">
+                    <propertyInstance
+                      Id="16540f90-a088-489d-9e01-34072abf68ac"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cd599769-ce2c-4044-a414-e5068277062e">
+                    <propertyInstance
+                      Id="76475af6-6661-4827-bfec-fd8457e2ac11"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b9b6f104-446c-49e1-83ca-f550b2691997"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9770561b-7a5f-4b71-b97c-7757caa4cdd7"
+                      LastKnownName="List&lt;ToyViewModel‎&gt;"
+                      LastKnownLocation="Package5_2026.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9a18da8a-1ff5-41cf-b554-0607c5dc0ee7"
+            name="UserController"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="859dbd43-aa3d-4bd9-8147-3776f876fa12"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DUserController Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ec86230a-bb8d-49df-81d4-62b504452ed3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7b0ca45-e12e-4dbe-a327-0bc61e313ba7">
+                    <propertyInstance
+                      Id="c8ae3a9d-df3e-4686-b281-062e306d387e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88425ba5-f664-4b13-9567-0864bbff3d9d">
+                    <propertyInstance
+                      Id="94d53117-79cd-4ab6-98a0-5f228abdef9c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a524e81-4534-47eb-b076-ed6babe7d78a">
+                    <propertyInstance
+                      Id="4c3db3ba-0e92-4765-bcb5-86b35e317786"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70b0baee-eb9a-4317-a59b-c84ec58bf332">
+                    <propertyInstance
+                      Id="ceb70f19-c9cf-4cea-a7bc-dec8b71bdcd0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd1dd4bf-cba6-4cdf-aa66-9f0d456efa56">
+                    <propertyInstance
+                      Id="db63f517-271d-4be2-9d9f-ff1ff6cd347b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57d4971d-bd20-4de3-84c0-8affc2e203b5">
+                    <propertyInstance
+                      Id="19dde8ba-1c2f-434a-9f91-85dcd7305df1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b48dc1ff-8b9b-4199-89a0-9ec2e303b223"
+        name="ToyController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="42afdb93-08f8-48e6-8990-365f48085289"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DToyController"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1d75c44d-7375-4815-ba4f-86dca7c01782"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d47d33a9-dec8-4572-997b-c3b767d6bb3d">
+                <propertyInstance
+                  Id="3cdfbdba-4728-4b5e-a83a-a066536be6ed"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2c79ec87-2121-4519-92b4-ebe9913a1a05">
+                <propertyInstance
+                  Id="ec467ffa-805f-4f45-8626-524eacb290cc"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f92f51d8-f18e-4a81-8786-0aa26e0ea02e">
+                <propertyInstance
+                  Id="b9188a65-1686-49a3-b227-a11784e761f7"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="133c0c83-1662-4a67-978c-a1b60b3b519d">
+                <propertyInstance
+                  Id="7506b8b9-dbab-499c-b37f-a2696ef8b8dd"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3df073eb-5e10-41b5-b324-0e2b36dea18d">
+                <propertyInstance
+                  Id="281a8798-3196-47a3-9996-39813f9fb9b7"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="4f1cd08b-2a65-4c25-90dd-80c15cedfe85"
+            isSubstitutable="false">
+            <classMoniker
+              Id="d4f2594a-b2e8-492b-af23-bd82cd12ca09"
+              LastKnownName="ApiController"
+              LastKnownLocation="Package3_2027.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="399b87ab-4ab1-44c5-b342-c129043ab241"
+            name="DeleteToy"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4ed3cc6c-5457-47bb-85fe-de6627e621c3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DToyController Member%3D(Name%3DDeleteToy OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8725ecc0-a117-4669-bdaf-93a86c8be2f6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ac7d907-0887-4683-9169-84ae371e9565">
+                    <propertyInstance
+                      Id="6f3e1ab6-d162-4047-9928-26c45a8aa8c8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5668881-3f3d-44b8-a3da-21d7ceefcbbb">
+                    <propertyInstance
+                      Id="7b9bc120-4bdd-4a10-a515-a662318a9cba"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6a6b6d7f-aa2b-4960-987b-12c96cfe42a2">
+                    <propertyInstance
+                      Id="7b75a5b7-72c8-4bc2-a4fb-d7593085360d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="292bf641-f8a9-4a1b-aa01-829b8426839d">
+                    <propertyInstance
+                      Id="0cc981ae-ba0e-4931-88a7-86c1dcb0b695"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8619f0ad-29e6-4633-abfd-1f4881709077">
+                    <propertyInstance
+                      Id="5a0b58f4-9048-46e6-968f-75f4f4184030"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c988edb-43b5-487a-a601-d3d8612ad1fd">
+                    <propertyInstance
+                      Id="deed8509-20e2-4c5c-bdb0-0e700cd11d51"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="18de3a77-77ff-4d14-9f92-c47fcd180aa4"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="88b32c96-dd60-460a-9c1b-8f020fb89c1b"
+                      LastKnownName="IHttpActionResult"
+                      LastKnownLocation="Package3_2027.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="24bac967-78e3-4f04-acca-c679bfc7a879"
+                  name="toyId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b38ddac9-f228-4cf4-b838-7c298aaecf7f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DToyController Member%3D(Name%3DDeleteToy OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DtoyId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a48bc0fa-a565-4bf2-9c2c-9dfc73f85701"
+            name="InfoAboutToy"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="50c58e47-1ef5-4b52-a1c9-82613f540f9e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DToyController Member%3D(Name%3DInfoAboutToy OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5b262e6b-e5e2-4517-bf0f-045950fefd7c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c1867b5-b6a9-4061-b27a-aaf682fd1d7a">
+                    <propertyInstance
+                      Id="e7acbde3-a7fa-4cb2-bb10-6ea30ceac9c4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f604085-71fd-4d81-b90e-39f5e1c91d6b">
+                    <propertyInstance
+                      Id="fa7720b4-7b98-4bb2-a400-81b99cf78adb"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ad60fdb-c5cc-442f-bcb5-2b6bf3e35efa">
+                    <propertyInstance
+                      Id="71a9ff47-4f47-41f2-bce7-352d28eff195"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c10bc14-60be-4543-831c-b5bbd393bffc">
+                    <propertyInstance
+                      Id="babda56f-b460-4ab6-a2d7-78681669eae0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="02287f37-7ba0-4a7e-a94f-d38b69a5ca31">
+                    <propertyInstance
+                      Id="9e12a2c1-5cc1-4853-8dde-cc62e791d67b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="17aab9e7-7a42-44af-b7f9-cc03e37d3509">
+                    <propertyInstance
+                      Id="aafae9fc-21e2-442d-a053-96842ffca853"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1ee05ce9-b0ac-46f9-8df8-0f18b79e2a74"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="190e98b5-73ce-41a9-ba51-7faaa131ee75"
+                      LastKnownName="InfoAboutToyViewModel"
+                      LastKnownLocation="Package_2027.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="61220c09-6d19-4043-b549-76b46e617f90"
+                  name="id"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ff0ee7be-d0cb-4128-b85b-064c43203ea9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DToyController Member%3D(Name%3DInfoAboutToy OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Did"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0953cdbb-5280-4aef-9b01-449f4551da18"
+            name="ToyController"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7b419a0e-edb3-4e95-8dd1-e7ed3ae5a86a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DToyController Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="dd9ef8de-d871-408b-81f6-83df00022df3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="08c37c83-45ba-4bed-9dbc-80217260afc1">
+                    <propertyInstance
+                      Id="df335477-c49e-4bbd-87e9-af43cc306c98"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ab3cc32-e6b0-4978-8907-84fdecc9a7a7">
+                    <propertyInstance
+                      Id="09fbd8ee-8548-468d-8872-b9e2cf4f7858"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a30aa54-3d4a-4a37-9e9d-73f6c47923cd">
+                    <propertyInstance
+                      Id="1cbe7c27-b5df-4594-bce8-2db3079f5520"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70a0a132-6573-4e92-9757-f7149019f274">
+                    <propertyInstance
+                      Id="3a7d2133-ecaa-42df-9408-eb1f1cd85c3b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2572e1e5-35f0-4509-985a-3c5de761798d">
+                    <propertyInstance
+                      Id="7e541807-fe93-4d3f-9cc2-c096e96fde97"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fdbf393f-6bd9-4e9c-9f5e-e716fc6405c1">
+                    <propertyInstance
+                      Id="0622f414-e9df-4ce2-8926-73116a70c033"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1bff4b88-d2ad-433d-8a99-08b328a6fd35"
+        name="StoreController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="4008fcc2-c4f5-4860-a399-7d909e0dcb20"
+            handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DStoreController"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="b1078896-5a7e-4ad4-a4d7-c76e93ec2fee"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5303a47d-eda9-4670-b446-ad605e58b7b4">
+                <propertyInstance
+                  Id="7ff3fcd7-2b70-4788-a089-024a692dda0a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d666eda2-2b48-45ee-979d-1b5152deb89b">
+                <propertyInstance
+                  Id="6cf1a752-0aef-47f5-b4ad-f69a2d2712a1"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4a49a40b-eac9-4577-aa31-38b13ab14c4e">
+                <propertyInstance
+                  Id="83b5db29-ee3f-4a21-8e06-344a3ee79455"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3f5b16c8-c3bb-4446-bec7-c68472ab450e">
+                <propertyInstance
+                  Id="ab51697c-1ca4-451e-a4ad-068230c1c742"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e3a3045b-7cf5-49e6-aa11-d75d1bffe119">
+                <propertyInstance
+                  Id="1b9527ff-ce05-4879-acdc-baeb3060fef4"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="4e8cf9e5-cdb1-4261-9d61-8c655f0c63b8">
+            <classMoniker
+              Id="f7a09e74-3bb4-40cd-9fb6-afae3a57262e"
+              LastKnownName="ApplicationDbContext"
+              LastKnownLocation="Package1_2026.uml" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="824dbb26-37a4-4065-9f7e-97f1fa9022c7"
+            isSubstitutable="false">
+            <classMoniker
+              Id="d4f2594a-b2e8-492b-af23-bd82cd12ca09"
+              LastKnownName="ApiController"
+              LastKnownLocation="Package3_2027.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2696d548-0fad-43fc-8dc7-7727752e1484"
+            name="BuyAction"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2d154841-ded7-4223-8aef-3f2a2cf16c09"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DStoreController Member%3D(Name%3DBuyAction OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DGuid)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="85dd35e9-7826-40be-a74e-75f30e0fc562"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28f66896-6030-4b4c-bf85-56c2f543bd4f">
+                    <propertyInstance
+                      Id="fda51768-3522-4161-be2f-cebd413a5fef"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96a04a1a-45b4-48c4-a0d2-08f2fabeab0c">
+                    <propertyInstance
+                      Id="fcb1dfd1-61b0-40ff-84d4-bf4c17b8a508"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36e3c616-23ab-4602-aaf3-a27788c69889">
+                    <propertyInstance
+                      Id="8051a4c1-de64-4a2b-b8c6-dcd5d42ecb76"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b450e3eb-e7fb-4856-b51b-3f5fba1123fb">
+                    <propertyInstance
+                      Id="608f29b4-8b64-4c84-93a8-91e093c8b94e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="433a2eb0-3beb-4028-ad3e-231468e1eee1">
+                    <propertyInstance
+                      Id="bc5a6868-9a4e-4c21-9c6a-ddebfd19f2e9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0669b0e1-7507-4bf9-a970-2c8b3784766d">
+                    <propertyInstance
+                      Id="e38e5612-c164-4738-af05-eb3bc6e6168e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6ff40d6d-5dae-4bdf-95f2-d42e04f43b41"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="88b32c96-dd60-460a-9c1b-8f020fb89c1b"
+                      LastKnownName="IHttpActionResult"
+                      LastKnownLocation="Package3_2027.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0b64a52c-14f5-468e-85ef-9534d410ab8e"
+                  name="actionId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1b7c738c-b7a5-4a08-b5b4-e65756c81f46"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DStoreController Member%3D(Name%3DBuyAction OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DGuid)]) ParameterIdentifier%3DactionId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b4f72af5-8565-4794-b918-fb79e8a665e9"
+                      LastKnownName="Guid"
+                      LastKnownLocation="Package3_2026.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="17ad49c9-2901-4600-964f-7060b90f816f"
+            name="BuyGame"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ad6b201b-71df-4d2c-a92a-3df4de046edf"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DStoreController Member%3D(Name%3DBuyGame OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DGuid)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="104c0cc0-5c55-4c78-b6f4-6bb836bf9541"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2bd3b71d-2510-4d7d-a246-f428a5c15787">
+                    <propertyInstance
+                      Id="cdd17a8d-4e2a-4610-868b-bd4e959534dd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1dce69b-bb82-4b4b-892b-e12d0615e106">
+                    <propertyInstance
+                      Id="a1b96eb9-e407-44d6-bdf6-dcc229dda285"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8529843d-e6a9-4319-b0e1-ad8dd5ab98b9">
+                    <propertyInstance
+                      Id="6554f0b2-33f6-40eb-b741-0ab81f7f8c52"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2cdee12e-9263-4a26-9899-5c14461c0e48">
+                    <propertyInstance
+                      Id="6f424771-e87c-4587-8d88-9e5594fb3c19"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e02312d7-7e44-437d-bdbf-7b073034ceb4">
+                    <propertyInstance
+                      Id="f5475135-13ac-4995-8126-a189c680383d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37a97445-17d9-4b09-827a-bb78eb07db47">
+                    <propertyInstance
+                      Id="f4361824-1959-4f87-b79e-f3464847f109"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="032a0a10-3ff9-4d43-a620-53aa0444b63d"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="88b32c96-dd60-460a-9c1b-8f020fb89c1b"
+                      LastKnownName="IHttpActionResult"
+                      LastKnownLocation="Package3_2027.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b9fe2187-62b6-4d23-8e18-cd0bb9e5c2e4"
+                  name="gameId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="74dc5c83-e271-4bcc-94b9-d88e6dbb7f53"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DStoreController Member%3D(Name%3DBuyGame OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DGuid)]) ParameterIdentifier%3DgameId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b4f72af5-8565-4794-b918-fb79e8a665e9"
+                      LastKnownName="Guid"
+                      LastKnownLocation="Package3_2026.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2758cba3-84b5-42dc-b66b-0fd6ff976941"
+            name="BuySong"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="668a15e3-0257-404e-a383-ecde1072e5a6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DStoreController Member%3D(Name%3DBuySong OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DGuid)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6b57df10-ab44-4fd5-9715-8ff9848ff0fc"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ea442b9-2c00-4995-8d62-01840765b0b8">
+                    <propertyInstance
+                      Id="31c2d094-be81-4229-9e1c-a819efdc8d1a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5964ff9e-7f47-4de9-be97-381b58a45ada">
+                    <propertyInstance
+                      Id="27940c3d-f2e0-4128-ac15-9f2205ee5e8f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e140b071-2aee-4e5d-b20f-e44373812b53">
+                    <propertyInstance
+                      Id="926e362f-37cf-43b9-abb9-c0b3553c6b5a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c70a749-a00e-4aea-b16e-f324036ee075">
+                    <propertyInstance
+                      Id="e8568b5e-ab0f-494e-a906-308ab72fb00a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85f96c4b-9d30-494c-8381-d27d2827a268">
+                    <propertyInstance
+                      Id="c8475831-7538-48b3-adef-7293929f1c55"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10b0e0cb-8848-4507-843f-a7601517838b">
+                    <propertyInstance
+                      Id="b0449229-d4c0-4d7f-96c2-b9590a4f57c5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d6df0892-fee8-4112-8a6e-a108f035c7dc"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="88b32c96-dd60-460a-9c1b-8f020fb89c1b"
+                      LastKnownName="IHttpActionResult"
+                      LastKnownLocation="Package3_2027.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="44628730-e268-4df3-8c1b-b4b9e7d4e0e9"
+                  name="songId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5e48addb-5518-46b8-a373-a87332994c2f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DStoreController Member%3D(Name%3DBuySong OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DGuid)]) ParameterIdentifier%3DsongId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b4f72af5-8565-4794-b918-fb79e8a665e9"
+                      LastKnownName="Guid"
+                      LastKnownLocation="Package3_2026.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="60df4321-950a-4e9d-88a5-045803d295d1"
+            name="BuyStory"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="91d325ca-1d69-43c7-a9b3-02189ebada0a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DStoreController Member%3D(Name%3DBuyStory OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DGuid)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fdf51b94-8425-49c1-bd0a-30d862be9ead"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0195d3e-81d6-4df3-aa19-3319ce99f17d">
+                    <propertyInstance
+                      Id="1f955b7a-60ec-470c-af59-8046d0ffb2fc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af331ca9-22c7-45ad-a42c-43cceec55536">
+                    <propertyInstance
+                      Id="726fb2d7-469f-4027-b0fb-0273442e9f25"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a2560ca8-830e-44b7-991e-e8c3254cee1e">
+                    <propertyInstance
+                      Id="2c75647c-99ee-4518-a4bc-7a155525c6ce"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="adf485c2-7549-447d-a7f8-7952df2dc492">
+                    <propertyInstance
+                      Id="88024998-5e96-44ce-8dd6-6ade0e958372"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d349be1-bf64-4870-80c7-c7702bc9ee04">
+                    <propertyInstance
+                      Id="2934c971-3087-41c3-bff9-5159d5140d08"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c8c221f0-7093-42fd-b795-4f39806fc079">
+                    <propertyInstance
+                      Id="8f9fece9-23be-481a-b43b-30391b799728"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d30b0481-ecc7-467b-b5e6-43fa92ce7a83"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="88b32c96-dd60-460a-9c1b-8f020fb89c1b"
+                      LastKnownName="IHttpActionResult"
+                      LastKnownLocation="Package3_2027.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="762047fe-d114-4b77-9ad5-5e289ac05b12"
+                  name="storyId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c24ea725-79d3-4a43-9157-4113f183f30a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DStoreController Member%3D(Name%3DBuyStory OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DGuid)]) ParameterIdentifier%3DstoryId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b4f72af5-8565-4794-b918-fb79e8a665e9"
+                      LastKnownName="Guid"
+                      LastKnownLocation="Package3_2026.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="22c5dd5d-5a6a-4ba6-aa77-42ab39bea9e9"
+            name="TakeMoney"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ca3f9de3-a8d0-4b94-aeb7-88bf5da0fd13"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DStoreController Member%3D(Name%3DTakeMoney OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DApplicationDbContext)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e0985284-a0f8-4979-9b01-d738b9b35a80"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52d89477-4d44-4195-bdea-623a4d1b826a">
+                    <propertyInstance
+                      Id="dedbdcba-d08b-4f50-9985-f2b13be4336c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e84fbfe3-56be-4996-bc0e-39f69d0cf8c3">
+                    <propertyInstance
+                      Id="0ea190fc-db05-4ba0-8630-87dfe0d269b0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3f0c5820-dab9-46c7-a0a7-4076f3085e6b">
+                    <propertyInstance
+                      Id="9b249891-6dbd-49f6-9e3c-41ff028bb956"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45f73f04-84c1-46ea-8384-954670d5ccd2">
+                    <propertyInstance
+                      Id="7e8b02f9-737c-4c57-a0be-e7c78bb015b8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="649a3073-1e67-4fd6-854a-f14179b4c013">
+                    <propertyInstance
+                      Id="e9e5844b-5b8c-4c21-9dba-ee9cae94f29c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a52461e6-672f-455e-82f3-a4682b547148">
+                    <propertyInstance
+                      Id="110146b1-cae6-4d08-9221-6a27e7908a32"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3f620047-977e-495c-b50e-e168a67ac548"
+                  name="money"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="420be942-c2d7-4020-91c7-68e1a9884fa1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DStoreController Member%3D(Name%3DTakeMoney OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DApplicationDbContext)]) ParameterIdentifier%3Dmoney"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="88f66708-e763-4b04-a529-ed5227e50615"
+                  name="userId"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8769e827-ae27-4403-bf26-14b5ad4d68f4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DStoreController Member%3D(Name%3DTakeMoney OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DApplicationDbContext)]) ParameterIdentifier%3DuserId"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8d7803b5-f485-453c-8227-126001f87f43"
+                  name="dbContext"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7485ec8e-801d-419c-8efe-0b5d70294b43"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DStoreController Member%3D(Name%3DTakeMoney OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.6.1%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Models Type%3DApplicationDbContext)]) ParameterIdentifier%3DdbContext"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f7a09e74-3bb4-40cd-9fb6-afae3a57262e"
+                      LastKnownName="ApplicationDbContext"
+                      LastKnownLocation="Package1_2026.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1ada8fdd-b8fa-449e-9b48-3095f2b4ec4b"
+            name="StoreController"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d7cf20ea-bdc8-4000-89a6-76c2e973eed8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DStoreController Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1d76fc36-731a-416c-8473-12e8f9d1a14b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84f59a4d-f032-4dd5-bd6b-7c7b6927083d">
+                    <propertyInstance
+                      Id="48c79456-bf66-42dd-8cf1-2cb7da1d3366"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e464e995-c031-48a5-a694-465bdd1f36c1">
+                    <propertyInstance
+                      Id="fed8c051-0d0d-4b6b-8a46-f81e85402a74"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="550f26dc-9af6-43b2-a889-d925dd8e2407">
+                    <propertyInstance
+                      Id="738f2d25-a802-4610-bc30-39941542b360"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="845024fe-ecd0-4740-92b9-e7f4f78b2b96">
+                    <propertyInstance
+                      Id="4e17c0a7-045a-42fd-8560-fd6e5598ece5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ee8ebfe-eaad-4f6c-9d3e-c3db701dd75b">
+                    <propertyInstance
+                      Id="bf605e3e-9957-48ed-bbcf-86a67906b24a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ba2974c-1d2d-4caf-bae2-e65e33b4f3aa">
+                    <propertyInstance
+                      Id="6eb73496-e0d2-4aba-8c09-e5c92a1306f7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="2de4a2fa-7e85-4a51-befd-bd8012acdd5e"
+            name="GetActions"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1944f42c-84b9-48c2-9bde-30da5b0e20be"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DStoreController Member%3DGetActions"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="29f21845-bf96-4dab-be43-52f7beabc1b9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49199fb5-ea46-4864-a68c-837eb266bd36">
+                    <propertyInstance
+                      Id="6aee61f9-06a4-435c-97d0-386a372e50e5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e503fd0-aaec-454a-aae0-158d9e585524">
+                    <propertyInstance
+                      Id="d7382042-19a9-4a63-a9da-b854f9826d86"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4d960c3-7e94-4422-b4b0-b099deaea20f">
+                    <propertyInstance
+                      Id="be47fa26-f5fd-46b5-b3b2-0f2d18aaf262"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd53f6c7-f11d-4d26-9ce1-07738f49c869">
+                    <propertyInstance
+                      Id="b1745b20-887d-41b9-9391-fec04e6852ef"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4cf7481a-474c-45b8-b2bd-354e4c8016f8">
+                    <propertyInstance
+                      Id="b18f745b-f94e-4780-9dfe-2ef9bbf6bcde"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ebbaa1fd-226d-453a-9d79-9c25ce80513f">
+                    <propertyInstance
+                      Id="5f151bdb-1544-45d1-aed1-466ab568ae97"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3bc3fd41-32bc-4918-b440-d8231ba3a44d"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ffa1af44-5db6-4be0-8abc-feefa13cc7db"
+                      LastKnownName="List&lt;ActionViewModel‎&gt;"
+                      LastKnownLocation="Package5_2026.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="74b0f627-6797-4910-908f-e0c5722cfd68"
+            name="GetGames"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d075722e-fa3e-4be6-bc13-62efd665c963"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DStoreController Member%3DGetGames"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="803ec16c-ff4c-4375-a5c3-c360beec06f6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c0b60c2-ad1b-4574-9a83-803a9f9e86e9">
+                    <propertyInstance
+                      Id="34afdf85-ac20-46ac-8bb2-9e9c8675daa8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f4dda1b5-d294-4c71-a1a9-d2098d6fd73a">
+                    <propertyInstance
+                      Id="02496959-fc9c-45b9-9730-607825dceae3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="897555e9-0957-41a5-acb7-340642c5d37e">
+                    <propertyInstance
+                      Id="9947b66b-9334-4ec9-81b0-9006cc5b323b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c15a965-c983-4381-aa77-5bf0663d039c">
+                    <propertyInstance
+                      Id="99cd86ab-a0c9-4572-a622-5f9e523faf35"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5b275ce2-d5cb-4843-a0b0-77f764cf535c">
+                    <propertyInstance
+                      Id="3bb2168e-fce7-4dc7-b397-74441b44774e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1863e905-683c-4720-a2d5-5beadb7aaf27">
+                    <propertyInstance
+                      Id="7b24a15c-fb4e-4247-929e-0aaeab546e2f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2b5be0fc-ee66-4030-94ea-c8e0a30210d5"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="36325c91-3aea-48c0-9002-fab8ad06596d"
+                      LastKnownName="List&lt;GameViewModel‎&gt;"
+                      LastKnownLocation="Package5_2026.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bf0d30fb-645d-4d8a-8c70-ddd67c11b463"
+            name="GetSongs"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="01b5a347-9206-440b-a8bb-56efd5c26435"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DStoreController Member%3DGetSongs"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="85971c77-be5c-425b-acfb-202a54390a0f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76e3dd15-ca58-4c4c-bcda-3b575e8f0f83">
+                    <propertyInstance
+                      Id="6cf4c08c-c0e3-4cbd-ad41-3b11cdd9c2c1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4eaf6e70-d747-41a8-8d65-1d8fc593b18f">
+                    <propertyInstance
+                      Id="64a20489-cb49-434e-b897-454ef6258c08"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c219cef-81a9-43b3-99d6-fd623aa231f5">
+                    <propertyInstance
+                      Id="34f3a7a6-b9b2-4f85-8d1c-69e0e33fe3b2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="995078bf-a495-477b-b865-0e3c49b0aae8">
+                    <propertyInstance
+                      Id="f4178074-5d35-413a-a96b-9c749822fc7a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69f34876-d2d4-4fc1-b16f-5c9220e9f632">
+                    <propertyInstance
+                      Id="09fecf4a-5ad1-44ca-9ee4-df8732eb30cf"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="061ebdd3-95e7-4ded-97ff-7cce0da83ea7">
+                    <propertyInstance
+                      Id="3bbcc56e-9910-4679-80bf-3f651c7ac2ed"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3444b878-a4c9-4c17-8a34-092e07d7cb1c"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="c04064e6-797f-41ba-9a83-9f55a7ca12f0"
+                      LastKnownName="List&lt;SongViewModel‎&gt;"
+                      LastKnownLocation="Package5_2026.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c1983fdc-9a51-432f-a02e-6de19375eb20"
+            name="GetStories"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e3c0a827-e8ab-4ab9-931f-871907bc92e3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FE:%2Fsmart-toy%2Fsmart-toy%2FSmartToyWebApp%2FSmartToyWebApp%2Fbin%2FSmartToyWebApp.dll Namespace%3DSmartToyWebApp.Controllers Type%3DStoreController Member%3DGetStories"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3bfc6c8a-d100-4a29-bbb4-e91bdd790d9f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8bfbb27b-15c2-4dfc-b539-9192a07c527e">
+                    <propertyInstance
+                      Id="969447ac-2758-4172-bbd4-5c821cc874e2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39343e1d-e821-4db2-9cd1-25fc329878bf">
+                    <propertyInstance
+                      Id="2d1b5999-093d-46b8-bbd5-f7a8fe0ff334"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6bb1244f-4725-4cf2-b323-6cd7f43eed82">
+                    <propertyInstance
+                      Id="a32a2a42-39f6-420b-9a53-227c4b3686c4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be8924ff-545e-4cdd-8642-dbdb654fc180">
+                    <propertyInstance
+                      Id="1bbce60d-6df3-435f-90e0-21d2bd1e70b0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d66c442-d8ef-47e4-abfc-720f36bddeea">
+                    <propertyInstance
+                      Id="c9c3683e-bfb1-4dc4-b341-361081b474f0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="93c22c84-8244-46cf-ab83-6a99cc2b1479">
+                    <propertyInstance
+                      Id="379cf46e-9521-4163-b0e8-a54edb88d488"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a23be528-cd7c-4d01-8ee0-4c3c0d52224f"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="39a64ed0-c1b0-4dec-ab55-002730f0133b"
+                      LastKnownName="List&lt;StoryViewModel‎&gt;"
+                      LastKnownLocation="Package5_2026.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="7b281691-6d09-40f9-ae4a-82e491724e17"
+        LastKnownName="AdminPanel"
+        LastKnownLocation="Package_2048.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

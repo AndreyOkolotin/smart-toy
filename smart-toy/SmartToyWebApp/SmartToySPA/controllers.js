@@ -137,7 +137,7 @@ smartToyControllers.controller('RegistrationCtrl', function ($scope, $routeParam
 });
 
 
-smartToyControllers.controller('StoreGamesCtrl', function ($scope, $routeParams, $http, growl) {
+smartToyControllers.controller('StoreGamesCtrl', function ($scope, $routeParams, $http, growl, $rootScope) {
     $scope.updateGames = function () {
         $http.get(config.WebApiEndPoint + config.Methods.GetStoreGames).then(
             function (res) {
@@ -149,7 +149,7 @@ smartToyControllers.controller('StoreGamesCtrl', function ($scope, $routeParams,
     }
 
     $scope.Buy = function (actionId) {
-        $http.post(config.WebApiEndPoint + config.Methods.BuyStory + "/" + actionId).then(
+        $http.post(config.WebApiEndPoint + config.Methods.BuyGame + "/" + actionId).then(
         function (res) {
             console.log(res);
             growl.success("Success");
@@ -417,7 +417,7 @@ smartToyControllers.controller('SignInCtrl', ['$scope', '$http', '$location', 'L
                     console.log("Токен пришел");
                     LS.setData(a.access_token);
                     $location.path('/home');
-                    growl.success("text");
+                    growl.success("Вы успешно вошли в систему");
                     $rootScope.updateToys();
                 })
                 .fail(function (e) {

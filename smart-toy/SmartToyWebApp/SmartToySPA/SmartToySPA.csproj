@@ -82,6 +82,11 @@
     <Content Include="ApiMethods.js" />
     <Content Include="Images\Frank - Copy.png" />
     <Content Include="Images\Frank 2.png" />
+    <Content Include="Images\ImagesForSmartToyWebApp\changa.jpg" />
+    <Content Include="Images\ImagesForSmartToyWebApp\cloud.jpg" />
+    <Content Include="Images\ImagesForSmartToyWebApp\colobok.jpg" />
+    <Content Include="Images\ImagesForSmartToyWebApp\friends.jpg" />
+    <Content Include="Images\ImagesForSmartToyWebApp\walk.jpg" />
     <Content Include="Images\ruble.png" />
     <Content Include="LS.js" />
     <Content Include="packages.config" />
